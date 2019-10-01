@@ -8,7 +8,7 @@ background      = #101010
 
 # black
 color0  = #101010
-color8  = #494949
+color8  = #505050
 
 # red
 color1  = #e95678
@@ -36,4 +36,4 @@ color14 = #008080
 
 # white
 color7  = #cccccc
-color15 = #dedede
+color15 = #ffffff
