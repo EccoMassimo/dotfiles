@@ -1,16 +1,13 @@
-[options]
-font = Source Code Pro 13
-
 [colors]
 
 # special
 foreground      = #cccccc
 foreground_bold = #cccccc
 cursor          = #cccccc
-background = rgba(32, 32, 32, 0.9)
+background      = #101010
 
 # black
-color0  = #202020
+color0  = #101010
 color8  = #494949
 
 # red
@@ -40,4 +37,3 @@ color14 = #008080
 # white
 color7  = #cccccc
 color15 = #dedede
-
