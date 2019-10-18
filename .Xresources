@@ -9,44 +9,43 @@ URxvt.scrollBar: false
 URxvt.scrollBar_right: false
 URxvt.depth: 24
 URxvt.font: xft: Hack:size=11:antialiasing=false 
+!!URxvt.font: xft:Terminus
 
 !! Rofi Appearance
 rofi.color-enabled: true 
-rofi.color-window: #101010, #101010, #101010
-rofi.color-normal: #101010, #ffffff, #101010, #008080, #101010
-rofi.color-active: #101010, #ffffff, #101010, #008080, #101010
-rofi.color-urgent: #101010, #ffffff, #101010, #008080, #101010
+rofi.color-window: #000000, #000000, #000000
+rofi.color-normal: #000000, #ffffff, #000000, #ffffff, #000000
+rofi.color-active: #000000, #ffffff, #000000, #ffffff, #000000
+rofi.color-urgent: #000000, #ffffff, #000000, #ffffff, #000000
 
-
-!! Colorscheme
 ! special
 *.foreground:   #ffffff
-*.background:   #101010
+*.background:   #000000
 *.cursorColor:  #ffffff
 
 ! black
-*.color0:       #101010
+*.color0:       #000000
 *.color8:       #505050
 
 ! red
-*.color1:       #e95678
-*.color9:       #e95678
+*.color1:       #FF5555
+*.color9:       #FF5555
 
 ! green
-*.color2:       #09f7a0
-*.color10:      #09f7a0
+*.color2:       #55FF55
+*.color10:      #55FF55
 
 ! yellow
-*.color3:       #fab795
-*.color11:      #fab795
+*.color3:       #FFFF55
+*.color11:      #FFFF55
 
 ! blue
-*.color4:       #545ba5
-*.color12:      #545ba5
+*.color4:       #5555FF
+*.color12:      #5555FF
 
 ! magenta
-*.color5:       #b877db
-*.color13:      #b877db
+*.color5:       #FF55FF
+*.color13:      #FF55FF
 
 ! cyan
 *.color6:       #008080
