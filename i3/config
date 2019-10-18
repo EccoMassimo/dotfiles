@@ -1,5 +1,4 @@
-# i3 config file (v4)
-# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+# EccoMassimo's i3 Configuration File
 
 # Mod Key
 set $mod Mod4
@@ -47,6 +46,10 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+h split h
 bindsym $mod+v split v
 
+# tab mode
+bindsym $mod+t layout tabbed
+bindsym $mod+s layout toggle split
+
 # toggle fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
@@ -57,9 +60,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # Workspace names
-# to display names or symbols instead of plain workspace numbers you can use
-# something like: set $ws1 1:mail
-#                 set $ws2 2:
+
 set $ws1 1:I
 set $ws2 2:II
 set $ws3 3:III
@@ -121,7 +122,7 @@ bindsym $mod+Shift+r restart
 
 # Set shut down, restart and locking features
 
-bindsym $mod+Shift+l exec i3lock -c 000000 
+bindsym $mod+Shift+l exec i3lock -c 000000
 
 bindsym $mod+Shift+q mode "PRESS Q TO QUIT"
 mode "PRESS Q TO QUIT" {
@@ -154,17 +155,7 @@ mode "RESIZE" {
 exec --no-startup-id nitrogen --restore
 
 # Color palette used for the terminal ( ~/.Xresources file )
-# Colors are gathered based on the documentation:
-# https://i3wm.org/docs/userguide.html#xresources
-# Change the variable name at the place you want to match the color
-# of your terminal like this:
-# [example]
-# If you want your bar to have the same background color as your 
-# terminal background change the line 362 from:
-# background #14191D
-# to:
-# background $term_background
-# Same logic applied to everything else.
+
 set_from_resource $term_background background
 set_from_resource $term_foreground foreground
 set_from_resource $term_color0     color0
@@ -190,20 +181,20 @@ bar {
 	status_command i3status
 	position top
 
-#   font xft:URWGothic-Book 11
+
 	strip_workspace_numbers yes
 
     colors {
-        background #101010
-        statusline #ffffff
-        separator  #101010
+        background $term_background
+        statusline $term_foreground
+        separator  $term_background
 
 #                      border  backgr. text
-        focused_workspace  #101010 #008080 #101010
-        active_workspace   #101010 #008080 #101010
-        inactive_workspace #101010 #505050 #101010
-        binding_mode       #101010 #505050 #101010
-        urgent_workspace   #101010 #505050 #e95678
+        focused_workspace  $term_background $term_foreground $term_background
+        active_workspace   $term_background $term_foreground $term_background
+        inactive_workspace $term_background $term_background $term_foreground
+        binding_mode       $term_background $term_background $term_foreground
+        urgent_workspace   $term_background $term_color1 $term_background
     }
 }
 
@@ -212,10 +203,10 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
- client.focused          #505050 #505050 #ffffff #ffffff
- client.focused_inactive #505050 #505050 #ffffff #ffffff
- client.unfocused        #505050 #505050 #ffffff #ffffff
- client.urgent           #505050 #505050 #ffffff #ffffff
- client.placeholder      #505050 #505050 #ffffff #ffffff
+ client.focused          $term_background $term_foreground $term_background $term_foreground
+ client.focused_inactive $term_background $term_foreground $term_background $term_foreground
+ client.unfocused        $term_background $term_background $term_foreground $term_foreground
+ client.urgent           $term_background $term_color1 $term_background $term_foreground
+ client.placeholder      $term_background $term_foreground $term_background $term_foreground
 
- client.background       #101010
+ client.background       $term_background
