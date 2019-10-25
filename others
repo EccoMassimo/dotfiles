@@ -1,3 +1,6 @@
 # Add this to visudo
 massimo ALL=(ALL) NOPASSWD: ALL
 
+# To install Icecat (run from ~/Programs/ folder AFTER extracting tar.bz2
+sudo ln -s $PWD/icecat/icecat-bin /usr/bin/icecat
+
