@@ -1,1 +1,3 @@
+# Add this to visudo
+massimo ALL=(ALL) NOPASSWD: ALL
 
