@@ -9,8 +9,7 @@ new_float pixel 0
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-#font xft:Hack 11
-font xft:Terminus
+font xft:DejaVu Sans Mono 11
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
@@ -22,11 +21,11 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+q kill
 
 # start program launcher
-bindsym $mod+d exec rofi -show drun -font "Terminus 10"
+bindsym $mod+d exec rofi -show drun -font "DejaVu Sans Mono 11"
 
 # Start Applications
 bindsym $mod+F1 exec icecat
-bindsym $mod+F2 exec pcmanfm
+bindsym $mod+F2 exec sudo pcmanfm
 bindsym $mod+F3 exec urxvt -e sudo vim
 bindsym $mod+F4 exec urxvt -e alsamixer
 
@@ -182,7 +181,7 @@ set_from_resource $term_color15    color15
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
 	i3bar_command i3bar
-	status_command i3status
+	#status_command i3status
 	position top
 
 
@@ -213,4 +212,4 @@ bindsym $mod+m bar mode toggle
  client.urgent           $term_background $term_color1 $term_background $term_foreground
  client.placeholder      $term_background $term_foreground $term_background $term_foreground
 
- client.background       $term_background
+client.background $term_background
