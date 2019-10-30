@@ -1,0 +1,16 @@
+general {
+        output_format = "i3bar"
+        colors = false
+        interval = 5
+}
+
+
+order += "tztime local"
+
+
+
+
+tztime local {
+        format = "%m.%d.%y   %H.%M.%S"
+}
+
