@@ -3,9 +3,12 @@
 # Mod Key
 set $mod Mod4
 
+# Auto Exec
+exec_always urxvt -e xrdb .Xresources
+
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-new_window pixel 0
-new_float pixel 0
+new_window none
+new_float none 
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -25,9 +28,10 @@ bindsym $mod+d exec rofi -show drun -font "DejaVu Sans Mono 11"
 
 # Start Applications
 bindsym $mod+F1 exec icecat
-bindsym $mod+F2 exec sudo pcmanfm
+bindsym $mod+F2 exec pcmanfm
 bindsym $mod+F3 exec urxvt -e sudo vim
 bindsym $mod+F4 exec urxvt -e alsamixer
+bindsym $mod+F5 exec urxvt -e tty-clock -C 7 -c -s
 
 # change focus
 bindsym $mod+Left focus left
@@ -60,7 +64,7 @@ bindsym $mod+space focus mode_toggle
 
 # floating window size
 floating_minimum_size -1 x -1
-floating_maximum_size 1000 x 1083
+floating_maximum_size -1 x -1
 
 # Workspace names
 
@@ -115,7 +119,8 @@ bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws10
 # assign [class="Program"] $ws1
 
 # Open specific applications in floating mode
-for_window [title="alsamixer"] floating enable 
+for_window [title="alsamixer"] floating enable
+for_window [title="tty-clock"] floating enable 
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -144,10 +149,10 @@ mode "RESIZE" {
         # Pressing down will grow the window’s height.
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 20 px or 20 ppt
-        bindsym Down resize grow height 20 px or 20 ppt
-        bindsym Up resize shrink height 20 px or 20 ppt
-        bindsym Right resize grow width 20 px or 20 ppt
+        bindsym Left resize shrink width 5 px or 5 ppt
+        bindsym Down resize grow height 5 px or 5 ppt
+        bindsym Up resize shrink height 5 px or 5 ppt
+        bindsym Right resize grow width 5 px or 5 ppt
 
         # exit resize mode: Enter or Escape
         bindsym Return mode "default"
@@ -181,13 +186,13 @@ set_from_resource $term_color15    color15
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
 	i3bar_command i3bar
-	#status_command i3status
-	position top
+	status_command i3status
+	position bottom 
 
 
 	strip_workspace_numbers yes
 
-    colors {
+     colors {
         background $term_background
         statusline $term_foreground
         separator  $term_background
@@ -206,8 +211,8 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
- client.focused          $term_background $term_foreground $term_background $term_foreground
- client.focused_inactive $term_background $term_foreground $term_background $term_foreground
+ client.focused          $term_foreground $term_foreground $term_background $term_foreground
+ client.focused_inactive $term_foreground $term_foreground $term_background $term_foreground
  client.unfocused        $term_background $term_background $term_foreground $term_foreground
  client.urgent           $term_background $term_color1 $term_background $term_foreground
  client.placeholder      $term_background $term_foreground $term_background $term_foreground

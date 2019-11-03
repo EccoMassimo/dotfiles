@@ -26,42 +26,42 @@ rofi.color-urgent: #000000, #ffffff, #000000, #ffffff, #000000
 !! Minecraft Colors (Best Colors)
 
 
-!! special
-!*.foreground:   #ffffff
-!*.background:   #000000
-!*.cursorColor:  #ffffff
-!
-!! black
-!*.color0:       #000000
-!*.color8:       #505050
-!
-!! red
-!*.color1:       #FF5555
-!*.color9:       #FF5555
-!
-!! green
-!*.color2:       #55FF55
-!*.color10:      #55FF55
-!
-!! yellow
-!*.color3:       #FFFF55
-!*.color11:      #FFFF55
-!
-!! blue
-!*.color4:       #5555FF
-!*.color12:      #5555FF
-!
-!! magenta
-!*.color5:       #FF55FF
-!*.color13:      #FF55FF
-!
-!! cyan
-!*.color6:       #008080
-!*.color14:      #008080
-!
-!! white
-!*.color7:       #ffffff
-!*.color15:      #ffffff
+! special
+*.foreground:   #ffffff
+*.background:   #000000
+*.cursorColor:  #ffffff
+
+! black
+*.color0:       #000000
+*.color8:       #505050
+
+! red
+*.color1:       #FF5555
+*.color9:       #FF5555
+
+! green
+*.color2:       #55FF55
+*.color10:      #55FF55
+
+! yellow
+*.color3:       #FFFF55
+*.color11:      #FFFF55
+
+! blue
+*.color4:       #5555FF
+*.color12:      #5555FF
+
+! magenta
+*.color5:       #FF55FF
+*.color13:      #FF55FF
+
+! cyan
+*.color6:       #008080
+*.color14:      #008080
+
+! white
+*.color7:       #ffffff
+*.color15:      #ffffff
 
 
 !! Massimo Colors
@@ -102,7 +102,7 @@ rofi.color-urgent: #000000, #ffffff, #000000, #ffffff, #000000
 !
 !! white
 !*.color7:       #cccccc
-!*.color15: 	   #ffffff
+!*.color15: 	 #ffffff
 
 
 !! Monokai
@@ -191,41 +191,42 @@ rofi.color-urgent: #000000, #ffffff, #000000, #ffffff, #000000
 !! Tomorrow
 
 
-! special
-*.foreground:   #c5c8c6
-*.background:   #1d1f21
-*.cursorColor:  #c5c8c6
+!! special
+!*.foreground:   #c5c8c6
+!*.background:   #1d1f21
+!*.cursorColor:  #c5c8c6
+!
+!! black
+!*.color0:       #1d1f21
+!*.color8:       #969896
+!
+!! red
+!*.color1:       #cc6666
+!*.color9:       #cc6666
+!
+!! green
+!*.color2:       #b5bd68
+!*.color10:      #b5bd68
+!
+!! yellow
+!*.color3:       #f0c674
+!*.color11:      #f0c674
+!
+!! blue
+!*.color4:       #81a2be
+!*.color12:      #81a2be
+!
+!! magenta
+!*.color5:       #b294bb
+!*.color13:      #b294bb
+!
+!! cyan
+!*.color6:       #8abeb7
+!*.color14:      #8abeb7
+!
+!! white
+!*.color7:       #c5c8c6
+!*.color15:      #ffffff
 
-! black
-*.color0:       #1d1f21
-*.color8:       #969896
-
-! red
-*.color1:       #cc6666
-*.color9:       #cc6666
-
-! green
-*.color2:       #b5bd68
-*.color10:      #b5bd68
-
-! yellow
-*.color3:       #f0c674
-*.color11:      #f0c674
-
-! blue
-*.color4:       #81a2be
-*.color12:      #81a2be
-
-! magenta
-*.color5:       #b294bb
-*.color13:      #b294bb
-
-! cyan
-*.color6:       #8abeb7
-*.color14:      #8abeb7
-
-! white
-*.color7:       #c5c8c6
-*.color15:      #ffffff
 
 

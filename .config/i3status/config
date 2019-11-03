@@ -11,6 +11,6 @@ order += "tztime local"
 
 
 tztime local {
-        format = "%m.%d.%y   %H.%M.%S"
+        format = "📆 %m.%d.%y   🕔 %H.%M.%S"
 }
 
