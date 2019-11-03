@@ -8,4 +8,3 @@
 #. /etc/X11/Xsession
 
 exec i3
-exec xrdb .Xresources

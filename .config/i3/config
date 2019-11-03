@@ -8,7 +8,7 @@ exec_always urxvt -e xrdb .Xresources
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 new_window none
-new_float none 
+new_float none
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -24,7 +24,7 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+q kill
 
 # start program launcher
-bindsym $mod+d exec rofi -show drun -font "DejaVu Sans Mono 11"
+bindsym $mod+d exec rofi -show run -font "DejaVu Sans Mono 11"
 
 # Start Applications
 bindsym $mod+F1 exec icecat
