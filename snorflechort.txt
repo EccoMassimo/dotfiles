@@ -1,0 +1,1 @@
+/give @s diamond_sword{display:{Name:"\"Ｉｎｓｔａｌｌ Ｇｅｎｔｏｏ\"",Lore:["\"ｄｏａｓ ｒｍ －ｒｆ ／\""]},Enchantments:[{id:sharpness,lvl:32767},{id:knockback,lvl:32767},{id:fire_aspect,lvl:32767},{id:looting,lvl:32767},{id:sweeping,lvl:32767},{id:unbreaking,lvl:32767},{id:mending,lvl:32767}]} 1
