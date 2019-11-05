@@ -8,8 +8,7 @@ URxvt.saveline: 3000
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
 URxvt.font: xft: DejaVu Sans Mono:size=11:antialiasing=false
-!URxvt.font: xft:Terminus
-!URxvt.boldFont: xft:Terminus
+ 
 
 !! Rofi 
 rofi.color-enabled: true 
@@ -28,7 +27,7 @@ rofi.terminal: urxvt
 !~ CTRL+V 35+RETURN SHIFT+i ! ESC+ESC
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-!! Minecraft Colors (Best Colors)
+!! Minecraft Colors + Win95 Cyan (Best Colors)
 
 
 ! special
@@ -234,4 +233,166 @@ rofi.terminal: urxvt
 !*.color15:      #ffffff
 
 
+!! Greenscreen
+
+
+!! special
+!*.foreground:   #00bb00
+!*.background:   #001100
+!*.cursorColor:  #00bb00
+!
+!! black
+!*.color0:       #001100
+!*.color8:       #007700
+!
+!! red
+!*.color1:       #007700
+!*.color9:       #007700
+!
+!! green
+!*.color2:       #00bb00
+!*.color10:      #00bb00
+!
+!! yellow
+!*.color3:       #007700
+!*.color11:      #007700
+!
+!! blue
+!*.color4:       #009900
+!*.color12:      #009900
+!
+!! magenta
+!*.color5:       #00bb00
+!*.color13:      #00bb00
+!
+!! cyan
+!*.color6:       #005500
+!*.color14:      #005500
+!
+!! white
+!*.color7:       #00bb00
+!*.color15:      #00ff00
+
+
+!! Gotham
+
+
+!! special
+!*.foreground:   #98d1ce
+!*.background:   #0a0f14
+!*.cursorColor:  #98d1ce
+!
+!! black
+!*.color0:       #0a0f14
+!*.color8:       #10151b
+!
+!! red
+!*.color1:       #c33027
+!*.color9:       #d26939
+!
+!! green
+!*.color2:       #26a98b
+!*.color10:      #081f2d
+!
+!! yellow
+!*.color3:       #edb54b
+!*.color11:      #245361
+!
+!! blue
+!*.color4:       #195465
+!*.color12:      #093748
+!
+!! magenta
+!*.color5:       #4e5165
+!*.color13:      #888ba5
+!
+!! cyan
+!*.color6:       #33859d
+!*.color14:      #599caa
+!
+!! white
+!*.color7:       #98d1ce
+!*.color15:      #d3ebe9
+
+
+!! Navy & Ivory 
+
+
+!! special
+!*.foreground:   #e8dfd6
+!*.background:   #021b21
+!*.cursorColor:  #e8dfd6
+!
+!! black
+!*.color0:       #032c36
+!*.color8:       #065f73
+!
+!! red
+!*.color1:       #c2454e
+!*.color9:       #ef5847
+!
+!! green
+!*.color2:       #7cbf9e
+!*.color10:      #a2d9b1
+!
+!! yellow
+!*.color3:       #8a7a63
+!*.color11:      #beb090
+!
+!! blue
+!*.color4:       #2e3340
+!*.color12:      #61778d
+!
+!! magenta
+!*.color5:       #ff5879
+!*.color13:      #ff99a1
+!
+!! cyan
+!*.color6:       #44b5b1
+!*.color14:      #9ed9d8
+!
+!! white
+!*.color7:       #f2f1b9
+!*.color15:      #f6f6c9
+
+
+!! /a/ was a mistake
+
+
+!! special
+!*.foreground:   #34302d
+!*.background:   #f5e7de
+!*.cursorColor:  #34302d
+!
+!! black
+!*.color0:       #666661
+!*.color8:       #7f7f7a
+!
+!! red
+!*.color1:       #b37e99
+!*.color9:       #c795ae
+!
+!! green
+!*.color2:       #4c3226
+!*.color10:      #664233
+!
+!! yellow
+!*.color3:       #a67c53
+!*.color11:      #bf8f60
+!
+!! blue
+!*.color4:       #85678f
+!*.color12:      #b294bb
+!
+!! magenta
+!*.color5:       #bf9986
+!*.color13:      #d9ae98
+!
+!! cyan
+!*.color6:       #d97742
+!*.color14:      #f2854a
+!
+!! white
+!*.color7:       #34302d
+!*.color15:      #4c4742
 
