@@ -1,0 +1,7 @@
+www.cyberciti.biz:HSTS	0	18205	1588533728859,1,0,2
+graph.facebook.com:HSTS	0	18205	1588533735909,1,0,2
+icons.duckduckgo.com:HSTS	0	18205	1604517725987,1,0,2
+duckduckgo.com:HSTS	0	18205	1604517727811,1,0,2
+ajax.cloudflare.com:HSTS	0	18205	1588761727448,1,1,2
+fonts.googleapis.com:HSTS	0	18205	1604517733609,1,0,2
+www.ostechnix.com:HSTS	0	18205	1636053827695,1,1,2

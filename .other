@@ -4,3 +4,28 @@ massimo ALL=(ALL) NOPASSWD: ALL
 # To install Icecat (run from ~/Programs/ folder AFTER extracting tar.bz2
 sudo ln -s $PWD/icecat/icecat-bin /usr/bin/icecat
 
+# Basic programs to install
+Drivers (duh)
+xorg (duh)
+alsa-utils
+neofetch
+cmatrix
+feh
+figlet
+git
+icecat
+xarchiver
+xfce4-settings
+xfce4-screenshooter
+discord
+steam
+urxvt
+i3
+tty-clock
+vim
+mousepad
+htop
+man
+cowsay
+hexchat
+
