@@ -5,7 +5,7 @@
 - This is mostly intended to work on *Arch Linux*, however it can be interpreted to work with other distros.
 
 ### Add this to visudo
-massimo ALL=(ALL) NOPASSWD: ALL
+*username* ALL=(ALL) NOPASSWD: ALL
 
 ### To install Icecat (run from ~/Programs/ folder AFTER extracting tar.bz2)
 sudo ln -s $PWD/icecat/icecat-bin /usr/bin/icecat
