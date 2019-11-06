@@ -16,9 +16,13 @@
 
 `sudo ln -s $PWD/icecat/icecat-bin /usr/bin/icecat`
 
+### AUR Packages
+
+`yay -S steam tty-clock`
+
 ### Copy this command and run it to install everything 
 
-`sudo pacman -S alsa-utils asciiquarium cmatrix cowsay discord feh figlet git hexchat htop i3 libreoffice-still lolcat man mousepad mpv neofetch openssh pcmanfm pulseaudio steam tty-clock urxvt vim xarchiver xfce4-screenshooter xfce4-settings xorg-xinit xorg-server`
+`sudo pacman -S alsa-utils asciiquarium cmatrix cowsay discord feh figlet git hexchat htop i3 libreoffice-still lolcat man mousepad mpv neofetch openssh pcmanfm pulseaudio rxvt-unicode tty-clock vim xarchiver xfce4-screenshooter xfce4-settings xorg-xinit xorg-server`
 
 ## Fonts
 
