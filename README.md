@@ -6,33 +6,61 @@ sudo ln -s $PWD/icecat/icecat-bin /usr/bin/icecat
 
 # Basic programs to install
 Drivers (duh)
+
 xorg (duh)
+
 alsa-utils
+
 neofetch
+
 cmatrix
+
 feh
+
 pcmanfm
+
 figlet
+
 git
+
 icecat
+
 xarchiver
+
 xfce4-settings
+
 xfce4-screenshooter
+
 discord
+
 steam
+
 urxvt
+
 i3
+
 tty-clock
+
 vim
+
 mousepad
+
 htop
+
 man
+
 cowsay
+
 pulseaudio
+
 hexchat
+
 openssh
+
 lolcat
+
 mpv
+
 asciiquarium
 
 # Fonts
