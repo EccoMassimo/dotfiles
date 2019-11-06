@@ -16,6 +16,8 @@
 
 `sudo ln -s $PWD/icecat/icecat-bin /usr/bin/icecat`
 
+When you are finished, move the .userjs file to your default profile folder & install ublock origin.
+
 ### AUR Packages
 
 `yay -S steam tty-clock`
