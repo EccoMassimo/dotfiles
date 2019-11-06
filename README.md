@@ -1,4 +1,4 @@
-# Massimo's Dotfiles:
+# Massimo's Dotfiles
 
 - Copy each of these files into your ~/ directory. This will update all of the configs and stuff automagically.
 
