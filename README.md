@@ -14,7 +14,7 @@
 
 - GNU IceCat - Extract tarball and run:
 
-- sudo ln -s $PWD/icecat/icecat-bin /usr/bin/icecat
+`sudo ln -s $PWD/icecat/icecat-bin /usr/bin/icecat`
 
 ### Copy this command and run it to install everything 
 
