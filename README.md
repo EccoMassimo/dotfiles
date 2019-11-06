@@ -1,3 +1,9 @@
+# Massimo's Dotfiles:
+
+- Copy each of these files into your ~/ directory. This will update all of the configs and stuff automagically.
+
+- This is mostly intended to work on *Arch Linux*, however it can be interpreted to work with other distros.
+
 ### Add this to visudo
 massimo ALL=(ALL) NOPASSWD: ALL
 
@@ -62,6 +68,8 @@ lolcat
 mpv
 
 asciiquarium
+
+yay
 
 ### Fonts
 pacman -S noto-fonts-emoji
