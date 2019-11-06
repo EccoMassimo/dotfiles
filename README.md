@@ -4,76 +4,25 @@
 
 - This is mostly intended to work on *Arch Linux*, however it can be interpreted to work with other distros.
 
-### Add this to visudo
+## Add this to visudo
+
 *username* ALL=(ALL) NOPASSWD: ALL
 
-### To install Icecat (run from ~/Programs/ folder AFTER extracting tar.bz2)
-sudo ln -s $PWD/icecat/icecat-bin /usr/bin/icecat
+## Basic programs to install
 
-### Basic programs to install
-Drivers (duh)
+- Yay: Install manually via AUR
 
-xorg (duh)
+- GNU IceCat - Extract tarball and run:
 
-alsa-utils
+- sudo ln -s $PWD/icecat/icecat-bin /usr/bin/icecat
 
-neofetch
+### Copy this command and run it to install everything 
 
-cmatrix
+`sudo pacman -S alsa-utils asciiquarium cmatrix cowsay discord feh figlet git hexchat htop i3 libreoffice-still lolcat man mousepad mpv neofetch openssh pcmanfm pulseaudio steam tty-clock urxvt vim xarchiver xfce4-screenshooter xfce4-settings xinit xorg-server`
 
-feh
+## Fonts
 
-pcmanfm
+`sudo pacman -S noto-fonts-emoji`
 
-figlet
-
-git
-
-icecat
-
-xarchiver
-
-xfce4-settings
-
-xfce4-screenshooter
-
-discord
-
-steam
-
-urxvt
-
-i3
-
-tty-clock
-
-vim
-
-mousepad
-
-htop
-
-man
-
-cowsay
-
-pulseaudio
-
-hexchat
-
-openssh
-
-lolcat
-
-mpv
-
-asciiquarium
-
-yay
-
-### Fonts
-pacman -S noto-fonts-emoji
-
-yay -S ttf-tw wqy-microhei wqy-zenhei ttf-arphic-ukai ttf-arphic-uming opendesktop-fonts wqy-bitmapfont ttf-hannom otf-ipafont ttf-vlgothic ttf-mplus ttf-monapo ttf-sazanami ttf-baekmuk ttf-nanum ttf-nanumgothic_coding --noconfirm
-
+`yay -S opendesktop-fonts otf-ipafont ttf-arphic-ukai ttf-arphic-uming ttf-baekmuk ttf-hannom ttf-monapo ttf-mplus ttf-nanum ttf-nanumgothic_coding ttf-sazanami ttf-tw ttf-vlgothic wqy-bitmapfont wqy-microhei wqy-zenhei --noconfirm`
 
