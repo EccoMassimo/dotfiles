@@ -11,6 +11,7 @@ alsa-utils
 neofetch
 cmatrix
 feh
+pcmanfm
 figlet
 git
 icecat
@@ -29,4 +30,11 @@ man
 cowsay
 pulseaudio
 hexchat
+openssh
+lolcat
+mpv
 
+
+# Fonts
+pacman -S noto-fonts-emoji
+yay -S ttf-tw wqy-microhei wqy-zenhei ttf-arphic-ukai ttf-arphic-uming opendesktop-fonts wqy-bitmapfont ttf-hannom otf-ipafont ttf-vlgothic ttf-mplus ttf-monapo ttf-sazanami ttf-baekmuk ttf-nanum ttf-nanumgothic_coding --noconfirm
