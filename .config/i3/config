@@ -30,9 +30,9 @@ bindsym $mod+d exec rofi -show run -font "DejaVu Sans Mono 11"
 # Start Applications
 bindsym $mod+F1 exec icecat
 bindsym $mod+F2 exec pcmanfm
-bindsym $mod+F3 exec sudo mousepad
-bindsym $mod+F4 exec urxvt -e alsamixer
-bindsym $mod+F5 exec urxvt -e tty-clock -C 7 -c -s
+bindsym $mod+F10 exec urxvt -e tty-clock -C 7 -c -s
+bindsym $mod+F11 exec urxvt -e alsamixer
+bindsym $mod+F12 exec urxvt -e htop
 
 # change focus
 bindsym $mod+Left focus left
