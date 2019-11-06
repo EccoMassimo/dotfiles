@@ -10,7 +10,7 @@
 
 ## Basic programs to install
 
-- Yay: Install manually via AUR
+- Yay - Install manually via AUR
 
 - GNU IceCat - Extract tarball and run:
 
