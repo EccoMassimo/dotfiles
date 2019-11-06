@@ -22,7 +22,7 @@
 
 ### Copy this command and run it to install everything 
 
-`sudo pacman -S alsa-utils asciiquarium cmatrix cowsay discord feh figlet git hexchat htop i3 libreoffice-still lolcat man mousepad mpv neofetch openssh pcmanfm pulseaudio rxvt-unicode vim xarchiver xfce4-screenshooter xfce4-settings xorg-xinit xorg-server`
+`sudo pacman -S alsa-utils asciiquarium base-devel cmatrix cowsay discord feh figlet git hexchat htop i3 libreoffice-still lolcat man mousepad mpv neofetch openssh pcmanfm pulseaudio rxvt-unicode vim xarchiver xfce4-screenshooter xfce4-settings xorg-xinit xorg-server`
 
 ## Fonts
 
