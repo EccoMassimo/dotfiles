@@ -25,7 +25,7 @@ pref("widget.content.allow-gtk-dark-theme",true);
 //MISD Branding
 pref("distribution.about", "MISD IceCat");
 pref("distribution.id", "MISD");
-pref("distribution.version", "69.0 ( ͡° ͜ʖ ͡°)");
+pref("distribution.version", "69.0");
 
 pref("app.releaseNotesURL", "https://crossthedesert.dev");
 pref("app.vendorURL", "https://crossthedesert.dev");
