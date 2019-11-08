@@ -6,7 +6,7 @@
 
 ## Add this to visudo
 
-`username ALL=(ALL) NOPASSWD: ALL`
+`YOUR_USERNAME ALL=(ALL) NOPASSWD: ALL`
 
 ## Basic programs to install
 
@@ -20,11 +20,11 @@ When you are finished, move the .userjs file to your default profile folder & in
 
 ### AUR Packages
 
-`yay -S steam tty-clock`
+`yay -S steam tty-clock minecraft-launcher`
 
 ### Copy this command and run it to install everything 
 
-`sudo pacman -S alsa-utils asciiquarium base-devel cmatrix cowsay discord feh figlet git hexchat htop i3 libreoffice-still lolcat lxappearance man mousepad mpv neofetch openssh pcmanfm pulseaudio rxvt-unicode scrot vim xarchiver xfce4-screenshooter xorg-xinit xorg-server`
+`sudo pacman -S alsa-utils asciiquarium base-devel cmatrix cowsay discord figlet git hexchat htop i3 libreoffice-still lolcat lxappearance man mousepad mpv neofetch openssh pcmanfm pulseaudio ristretto rxvt-unicode scrot vim xarchiver xfce4-screenshooter xorg-xinit xorg-server`
 
 ## Fonts
 
@@ -34,4 +34,4 @@ When you are finished, move the .userjs file to your default profile folder & in
 
 ## Other Configuration
 
-- Mouse Acceleration: `sudo mv .other/50-mouse-acceleration.conf /etc/X11/xorg.conf.d/50-mouse-acceleration.conf`
+- Mouse Acceleration: `xset m 0 0 ; sudo cp .other/50-mouse-acceleration.conf /etc/X11/xorg.conf.d/50-mouse-acceleration.conf`
