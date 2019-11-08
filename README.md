@@ -34,4 +34,4 @@ When you are finished, move the .userjs file to your default profile folder & in
 
 ## Other Configuration
 
-- Mouse Acceleration: `sudo mv .other/50-mouse-acceleration.conf /etc/X11/xorg.conf.d/50-mouse-acceleration.conf`
+- Mouse Acceleration: `sudo cp .other/50-mouse-acceleration.conf /etc/X11/xorg.conf.d/50-mouse-acceleration.conf`
