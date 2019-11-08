@@ -6,7 +6,7 @@
 
 ## Add this to visudo
 
-`username ALL=(ALL) NOPASSWD: ALL`
+`YOUR_USERNAME ALL=(ALL) NOPASSWD: ALL`
 
 ## Basic programs to install
 
