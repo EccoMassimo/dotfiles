@@ -26,7 +26,7 @@ pref("browser.newtabpage.activity-stream.showTopSites", false);
 pref("browser.newtabpage.activity-stream.prerender", false);
 pref("browser.newtabpage.activity-stream.feeds.section.highlights", false);
 pref("browser.newtabpage.activity-stream.showTopSites", false);
-
+pref("browser.warnOnQuit", false);
 
 //MISD Branding
 pref("distribution.about", "MISD IceCat");
