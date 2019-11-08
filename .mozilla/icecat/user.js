@@ -21,6 +21,12 @@ pref("dom.webnotifications.serviceworker.enabled",false);
 pref("dom.push.enabled",false); 
 pref("widget.chrome.allow-gtk-dark-theme", true);
 pref("widget.content.allow-gtk-dark-theme",true);
+pref("general.smoothScroll", false);
+pref("browser.newtabpage.activity-stream.showTopSites", false);
+pref("browser.newtabpage.activity-stream.prerender", false);
+pref("browser.newtabpage.activity-stream.feeds.section.highlights", false);
+pref("browser.newtabpage.activity-stream.showTopSites", false);
+
 
 //MISD Branding
 pref("distribution.about", "MISD IceCat");
