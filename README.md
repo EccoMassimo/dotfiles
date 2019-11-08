@@ -20,7 +20,7 @@ When you are finished, move the .userjs file to your default profile folder & in
 
 ### AUR Packages
 
-`yay -S steam tty-clock`
+`yay -S steam tty-clock minecraft-launcher`
 
 ### Copy this command and run it to install everything 
 
