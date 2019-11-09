@@ -8,7 +8,7 @@ pref("general.useragent.override", "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:2
 
 //Appearance
 pref("font.internaluseonly.changed", true);
-pref("font.name.monospace.x-western", "DejaVu Sans Mono");
+pref("font.name.monospace.x-western", "Less Perfect DOS VGA");
 pref("font.name.sans-serif.x-western", "DejaVu Sans");
 pref("font.name.serif.x-western", "DejaVu Serif");
 pref("font.size.fixed.x-western", 14);
