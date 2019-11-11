@@ -27,6 +27,13 @@ pref("browser.newtabpage.activity-stream.prerender", false);
 pref("browser.newtabpage.activity-stream.feeds.section.highlights", false);
 pref("browser.newtabpage.activity-stream.showTopSites", false);
 
+pref("extensions.blocklist.enabled", false);
+pref("services.sync.prefs.sync.security.OCSP.enabled", false);
+pref("security.OCSP.GET.enabled", false);
+pref("security.OCSP.require", false);
+pref("security.OCSP.enabled", 0);
+pref("geo.enabled", false);
+
 
 //Clear history settings
 user_pref("privacy.clearOnShutdown.cookies", false);

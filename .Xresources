@@ -7,8 +7,7 @@ URxvt.cursorUnderline: false
 URxvt.saveline: 3000 
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
-URxvt.font: xft: DejaVu Sans Mono:size=11:antialiasing=false
- 
+URxvt.font: xft: ProFontWindows:size=14
 
 !! Rofi 
 rofi.color-enabled: true 
@@ -27,7 +26,7 @@ rofi.terminal: urxvt
 !~ CTRL+V 35+RETURN SHIFT+i ! ESC+ESC
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-!! Minecraft Colors + Win95 Cyan (Best Colors)
+!! CGA 16 Color
 
 
 ! special
@@ -37,35 +36,76 @@ rofi.terminal: urxvt
 
 ! black
 *.color0:       #000000
-*.color8:       #505050
+*.color8:       #555555
 
 ! red
-*.color1:       #FF5555
-*.color9:       #FF5555
+*.color1:       #aa0000
+*.color9:       #ff5555
 
 ! green
-*.color2:       #55FF55
-*.color10:      #55FF55
+*.color2:       #00aa00
+*.color10:      #55ff55
 
 ! yellow
-*.color3:       #FFFF55
-*.color11:      #FFFF55
+*.color3:       #aa5500
+*.color11:      #ffff55
 
 ! blue
-*.color4:       #5555FF
-*.color12:      #5555FF
+*.color4:       #0000aa
+*.color12:      #5555ff
 
 ! magenta
-*.color5:       #FF55FF
-*.color13:      #FF55FF
+*.color5:       #aa00aa
+*.color13:      #ff55ff
 
 ! cyan
-*.color6:       #008080
-*.color14:      #008080
+*.color6:       #00aaaa
+*.color14:      #55ffff
 
 ! white
-*.color7:       #ffffff
+*.color7:       #aaaaaa
 *.color15:      #ffffff
+
+
+!! Minecraft Colors + Win95 Cyan
+
+
+!! special
+!*.foreground:   #ffffff
+!*.background:   #000000
+!*.cursorColor:  #ffffff
+!
+!! black
+!*.color0:       #000000
+!*.color8:       #505050
+!
+!! red
+!*.color1:       #FF5555
+!*.color9:       #FF5555
+!
+!! green
+!*.color2:       #55FF55
+!*.color10:      #55FF55
+!
+!! yellow
+!*.color3:       #FFFF55
+!*.color11:      #FFFF55
+!
+!! blue
+!*.color4:       #5555FF
+!*.color12:      #5555FF
+!
+!! magenta
+!*.color5:       #FF55FF
+!*.color13:      #FF55FF
+!
+!! cyan
+!*.color6:       #008080
+!*.color14:      #008080
+!
+!! white
+!*.color7:       #ffffff
+!*.color15:      #ffffff
 
 
 !! Massimo Colors
