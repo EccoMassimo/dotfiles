@@ -31,7 +31,7 @@ When you are finished, move the .userjs file to your default profile folder & in
 
 - Install the Helv font via font-manager. (File Located in .fonts)
 
--Also install the following for emoji, and asian language support.
+- Also install the following for emoji, and asian language support.
 `sudo pacman -S noto-fonts-emoji`
 
 `yay -S opendesktop-fonts otf-ipafont ttf-arphic-ukai ttf-arphic-uming ttf-baekmuk ttf-hannom ttf-monapo ttf-mplus ttf-nanum ttf-nanumgothic_coding ttf-sazanami ttf-tw ttf-vlgothic wqy-bitmapfont wqy-microhei wqy-zenhei --noconfirm`
