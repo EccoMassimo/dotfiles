@@ -7,7 +7,7 @@ URxvt.cursorUnderline: false
 URxvt.saveline: 3000 
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
-URxvt.font: xft: DejaVu Sans Mono : size=12
+URxvt.font: xft: DejaVu Sans Mono : size=11
 
 !! Rofi 
 rofi.color-enabled: true 
