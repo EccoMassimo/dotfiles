@@ -12,15 +12,16 @@
 
 - Yay - Install manually via AUR
 
-- GNU IceCat - Extract tarball and run:
+- SeaMonkey - Extract tarball and run:
 
-`sudo ln -s $PWD/icecat/icecat-bin /usr/bin/icecat`
+`sudo ln -s $PWD/seamonkey/seamonkey-bin /usr/bin/seamonkey`
 
 When you are finished, move the .userjs file to your default profile folder & install ublock origin.
+(https://github.com/gorhill/uBlock/releases/download/firefox-legacy-1.16.4.10/uBlock0.firefox-legacy.xpi)
 
 ### AUR Packages
 
-`yay -S steam tty-clock minecraft-launcher`
+`yay -S steam tty-clock minecraft-launcher font-manager`
 
 ### Copy this command and run it to install everything 
 
@@ -28,6 +29,9 @@ When you are finished, move the .userjs file to your default profile folder & in
 
 ## Fonts
 
+- Install the Helv font via font-manager. (File Located in .fonts)
+
+- Also install the following for emoji, and asian language support.
 `sudo pacman -S noto-fonts-emoji`
 
 `yay -S opendesktop-fonts otf-ipafont ttf-arphic-ukai ttf-arphic-uming ttf-baekmuk ttf-hannom ttf-monapo ttf-mplus ttf-nanum ttf-nanumgothic_coding ttf-sazanami ttf-tw ttf-vlgothic wqy-bitmapfont wqy-microhei wqy-zenhei --noconfirm`
