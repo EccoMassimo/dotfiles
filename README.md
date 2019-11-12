@@ -29,7 +29,8 @@ When you are finished, move the .userjs file to your default profile folder & in
 
 ## Fonts
 
-- Install the Helv font via font-manager. (File Located in .fonts)
+- Install the Helv font for default font. (File Located in .fonts)
+- Install GNU Unifont for i3 and terminals.
 
 - Also install the following for emoji, and asian language support.
 `sudo pacman -S noto-fonts-emoji`
