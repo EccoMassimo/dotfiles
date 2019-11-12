@@ -8,16 +8,20 @@
 
 `YOUR_USERNAME ALL=(ALL) NOPASSWD: ALL`
 
-## Basic programs to install
+## Programs
 
-- Yay - Install manually via AUR
+- Yay - AUR Helper. This must be manually installed via git and built with `makepkg -si`
+
+### Browser
 
 - SeaMonkey - Extract tarball and run:
 
 `sudo ln -s $PWD/seamonkey/seamonkey-bin /usr/bin/seamonkey`
 
-When you are finished, move the .userjs file to your default profile folder & install ublock origin.
+- When you are finished, move the .userjs file to your default profile folder & install ublock origin.
 (https://github.com/gorhill/uBlock/releases/download/firefox-legacy-1.16.4.10/uBlock0.firefox-legacy.xpi)
+
+
 
 ### AUR Packages
 
@@ -29,7 +33,7 @@ When you are finished, move the .userjs file to your default profile folder & in
 
 ## Fonts
 
-- Install the Helv font for default font. (File Located in .fonts)
+- Install the Helv font for browser and other non terminal fonts. (File Located in .fonts)
 - Install GNU Unifont for i3 and terminals.
 
 - Also install the following for emoji, and asian language support.
