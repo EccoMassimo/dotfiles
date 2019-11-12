@@ -28,8 +28,9 @@ bindsym $mod+q kill
 bindsym $mod+d exec rofi -show run -font "Helv 12"
 
 # Start Applications
-bindsym $mod+F1 exec icecat
+bindsym $mod+F1 exec seamonkey
 bindsym $mod+F2 exec pcmanfm
+bindsym $mod+F3 exec notepadqq
 bindsym $mod+F11 exec urxvt -e alsamixer
 bindsym $mod+F12 exec urxvt -e htop
 

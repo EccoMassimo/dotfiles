@@ -9,6 +9,7 @@ URxvt.scrollBar: false
 URxvt.scrollBar_right: false
 URxvt.font: xft: DejaVu Sans Mono : size=11
 
+
 !! Rofi 
 rofi.color-enabled: true 
 rofi.color-window: #000000, #ffffff, #000000
