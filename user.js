@@ -53,7 +53,7 @@ user_pref("media.eme.enabled",  false);
 user_pref("media.gmp-widevinecdm.enabled", false);
 user_pref("media.navigator.enabled",  false);
 user_pref("network.cookie.cookieBehavior",  1);
-user_pref("network.http.referer.XOriginPolicy", 2);
+user_pref("network.http.referer.XOriginPolicy", 0); //this breaks captchas if set above 0
 user_pref("webgl.disabled",  true);
 user_pref("browser.sessionstore.privacy_level",  0); //0Store All 1Store Data for HTTP only 2Never Store Session Data
 user_pref("network.IDN_show_punycode",  true);
