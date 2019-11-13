@@ -10,7 +10,9 @@
 
 ## Programs
 
-- Yay - AUR Helper. This must be manually installed via git and built with `makepkg -si`
+- When installing generic program types (tarballs), place them in the ~/Programs folder.
+- To create a symbolic link use this command:
+`sudo ln -s ~/Programs/PROGRAM_NAME/PROGRAM_RUN_FILE /usr/bin/SYMLINK_NAME`
 
 ### Browser
 
