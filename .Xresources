@@ -7,9 +7,10 @@ URxvt.cursorUnderline: false
 URxvt.saveline: 3000 
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
-!URxvt.font: xft: DejaVu Sans Mono : size=11
-URxvt.font: xft: Unifont : size=12
-URxvt.boldFont: xft: Unifont : size=12
+URxvt.font: xft: DejaVu Sans Mono : size=11
+URxvt.boldFont: xft: DejaVu Sans Mono: size=11
+!URxvt.font: xft: Unifont : size=12
+!URxvt.boldFont: xft: Unifont : size=12
 
 
 !! Rofi 
@@ -32,42 +33,42 @@ rofi.terminal: urxvt
 !! CGA 16 Color
 
 
-!! special
-!*.foreground:   #ffffff
-!*.background:   #000000
-!*.cursorColor:  #ffffff
-!
-!! black
-!*.color0:       #000000
-!*.color8:       #555555
-!
-!! red
-!*.color1:       #aa0000
-!*.color9:       #ff5555
-!
-!! green
-!*.color2:       #00aa00
-!*.color10:      #55ff55
-!
-!! yellow
-!*.color3:       #aa5500
-!*.color11:      #ffff55
-!
-!! blue
-!*.color4:       #0000aa
-!*.color12:      #5555ff
-!
-!! magenta
-!*.color5:       #aa00aa
-!*.color13:      #ff55ff
-!
-!! cyan
-!*.color6:       #00aaaa
-!*.color14:      #55ffff
-!
-!! white
-!*.color7:       #aaaaaa
-!*.color15:      #ffffff
+! special
+*.foreground:   #ffffff
+*.background:   #000000
+*.cursorColor:  #ffffff
+
+! black
+*.color0:       #000000
+*.color8:       #555555
+
+! red
+*.color1:       #aa0000
+*.color9:       #ff5555
+
+! green
+*.color2:       #00aa00
+*.color10:      #55ff55
+
+! yellow
+*.color3:       #aa5500
+*.color11:      #ffff55
+
+! blue
+*.color4:       #0000aa
+*.color12:      #5555ff
+
+! magenta
+*.color5:       #aa00aa
+*.color13:      #ff55ff
+
+! cyan
+*.color6:       #00aaaa
+*.color14:      #55ffff
+
+! white
+*.color7:       #aaaaaa
+*.color15:      #ffffff
 
 
 !! Minecraft Colors + Win95 Cyan
@@ -361,42 +362,42 @@ rofi.terminal: urxvt
 !! Navy & Ivory 
 
 
-! special
-*.foreground:   #e8dfd6
-*.background:   #021b21
-*.cursorColor:  #e8dfd6
-
-! black
-*.color0:       #032c36
-*.color8:       #065f73
-
-! red
-*.color1:       #c2454e
-*.color9:       #ef5847
-
-! green
-*.color2:       #7cbf9e
-*.color10:      #a2d9b1
-
-! yellow
-*.color3:       #8a7a63
-*.color11:      #beb090
-
-! blue
-*.color4:       #2e3340
-*.color12:      #61778d
-
-! magenta
-*.color5:       #ff5879
-*.color13:      #ff99a1
-
-! cyan
-*.color6:       #44b5b1
-*.color14:      #9ed9d8
-
-! white
-*.color7:       #f2f1b9
-*.color15:      #f6f6c9
+!! special
+!*.foreground:   #e8dfd6
+!*.background:   #021b21
+!*.cursorColor:  #e8dfd6
+!
+!! black
+!*.color0:       #032c36
+!*.color8:       #065f73
+!
+!! red
+!*.color1:       #c2454e
+!*.color9:       #ef5847
+!
+!! green
+!*.color2:       #7cbf9e
+!*.color10:      #a2d9b1
+!
+!! yellow
+!*.color3:       #8a7a63
+!*.color11:      #beb090
+!
+!! blue
+!*.color4:       #2e3340
+!*.color12:      #61778d
+!
+!! magenta
+!*.color5:       #ff5879
+!*.color13:      #ff99a1
+!
+!! cyan
+!*.color6:       #44b5b1
+!*.color14:      #9ed9d8
+!
+!! white
+!*.color7:       #f2f1b9
+!*.color15:      #f6f6c9
 
 
 !! /a/ was a mistake
