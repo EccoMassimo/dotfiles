@@ -20,7 +20,7 @@
 
 ### Browser
 
-- SeaMonkey - Extract tarball and run:
+- GNU IceCat - Extract tarball and run:
 
 `sudo ln -s $PWD/icecat/icecat-bin /usr/bin/icecat`
 
