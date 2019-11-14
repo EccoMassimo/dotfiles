@@ -12,7 +12,7 @@
 
 - When installing generic program types (tarballs), place them in the ~/Programs folder.
 - To create a symbolic link use this command:
-`sudo ln -s ~/Programs/PROGRAM_NAME/PROGRAM_RUN_FILE /usr/bin/SYMLINK_NAME`
+`sudo ln -s PROGRAM_RUN_FILE /usr/bin/SYMLINK_NAME`
 
 ### Yay
 
@@ -22,7 +22,7 @@
 
 - SeaMonkey - Extract tarball and run:
 
-`sudo ln -s $PWD/seamonkey/seamonkey-bin /usr/bin/seamonkey`
+`sudo ln -s $PWD/icecat/icecat-bin /usr/bin/icecat`
 
 - When you are finished, move the .userjs file to your default profile folder & install ublock origin.
 (https://github.com/gorhill/uBlock/releases/download/firefox-legacy-1.16.4.10/uBlock0.firefox-legacy.xpi)
@@ -39,8 +39,8 @@
 
 ## Fonts
 
-- Install the Helv font for browser and other non terminal fonts. (File Located in .fonts)
-- Install GNU Unifont for i3 and terminals.
+- Install Helv for browser and other non terminal fonts. (File Located in .fonts)
+- Install DejaVu Sans Mono for terminals & text editors.
 
 - Also install the following for emoji, and asian language support.
 `sudo pacman -S noto-fonts-emoji`
