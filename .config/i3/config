@@ -5,14 +5,17 @@ set $mod Mod4
 
 # Auto Exec
 exec_always urxvt -e xrdb .Xresources
+exec --no-startup-id nitrogen --restore
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 new_window normal
 new_float normal
+default_border normal
+hide_edge_borders none
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font xft: DejaVu Sans Mono 11
+font xft: DejaVu Serif 11
 
 
 # Use Mouse+$mod to drag floating windows
@@ -25,7 +28,7 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+q kill
 
 # start program launcher
-bindsym $mod+d exec rofi -show run -font "DejaVu Sans Mono 11"
+bindsym $mod+d exec rofi -show run -font "DejaVu Serif 11"
 
 # Start Applications
 bindsym $mod+F1 exec icecat
@@ -161,9 +164,6 @@ mode "RESIZE" {
         bindsym Escape mode "default"
 }
 
-# Autostart applications
-exec --no-startup-id nitrogen --restore
-
 # Color palette used for the terminal ( ~/.Xresources file )
 
 set_from_resource $term_background background
@@ -216,8 +216,3 @@ bar {
  client.placeholder      $term_color8 $term_foreground $term_foreground $term_foreground
 
 client.background $term_background
-
-# Gaps
-smart_gaps on
-gaps outer 5
-gaps inner 5
