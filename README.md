@@ -39,8 +39,7 @@
 
 ## Fonts
 
-- Install Helv for browser and other non terminal fonts. (File Located in .fonts)
-- Install DejaVu Sans Mono for terminals & text editors.
+- Install the DejaVu Font Family
 
 - Also install the following for emoji, and asian language support.
 `sudo pacman -S noto-fonts-emoji`
