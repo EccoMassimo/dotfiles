@@ -7,8 +7,8 @@ set $mod Mod4
 exec_always urxvt -e xrdb .Xresources
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-new_window pixel 2
-new_float pixel 2
+new_window normal
+new_float normal
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -122,7 +122,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws10
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable
-for_window [title="tty-clock"] floating enable 
+for_window [title="feh"] floating enable 
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -189,8 +189,7 @@ set_from_resource $term_color15    color15
 bar {
 	i3bar_command i3bar
 	status_command i3status
-	position bottom 
-
+	position bottom 	
 
 	strip_workspace_numbers yes
 
@@ -203,17 +202,22 @@ bar {
         focused_workspace  $term_background $term_foreground $term_background
         active_workspace   $term_background $term_foreground $term_background
         inactive_workspace $term_background $term_background $term_foreground
-        binding_mode       $term_background $term_foreground $term_foreground
+        binding_mode       $term_background $term_foreground $term_background
         urgent_workspace   $term_background $term_color1 $term_background
     }
 }
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
- client.focused          $term_color7 $term_color7 $term_foreground $term_foreground
+ client.focused          $term_color7 $term_color7 $term_background $term_foreground
  client.focused_inactive $term_color8 $term_color8 $term_background $term_foreground
  client.unfocused        $term_color8 $term_color8 $term_background $term_foreground
  client.urgent           $term_color8 $term_color8 $term_foreground $term_foreground
  client.placeholder      $term_color8 $term_foreground $term_foreground $term_foreground
 
 client.background $term_background
+
+# Gaps
+smart_gaps on
+gaps outer 5
+gaps inner 5
