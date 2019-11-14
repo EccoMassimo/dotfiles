@@ -12,10 +12,10 @@ user_pref("browser.tabs.loadInBackground", false);
 //Appearance
 user_pref("font.internaluseonly.changed", true);
 user_pref("font.name.monospace.x-western", "Deja Vu Sans Mono");
-user_pref("font.name.sans-serif.x-western", "Helv");
-user_pref("font.name.serif.x-western", "Helv");
+user_pref("font.name.sans-serif.x-western", "DejaVu Sans Serif");
+user_pref("font.name.serif.x-western", "DejaVu Serif");
 user_pref("font.size.fixed.x-western", 11);
-user_pref("font.size.variable.x-western", 12);
+user_pref("font.size.variable.x-western", 11);
 user_pref("browser.urlbar.placeholderName", "SuccSuccGo");
 user_pref("browser.startup.homepage", "about:blank");
 user_pref("browser.newtabpage.enabled", false);
