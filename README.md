@@ -22,7 +22,7 @@
 
 - GNU IceCat - Extract tarball and run:
 
-`sudo ln -s $PWD/icecat/icecat-bin /usr/bin/icecat`
+`sudo ln -s icecat-bin /usr/bin/icecat`
 
 - When you are finished, move the .userjs file to your default profile folder & install ublock origin.
 (https://github.com/gorhill/uBlock/releases/download/firefox-legacy-1.16.4.10/uBlock0.firefox-legacy.xpi)
