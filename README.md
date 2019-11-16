@@ -35,7 +35,7 @@
 
 ### Copy this command and run it to install everything 
 
-`sudo pacman -S alsa-utils asciiquarium audacity base-devel cmatrix cowsay feh figlet git hexchat htop i3 libreoffice-still lolcat lxappearance man mpv neofetch notepadqq openssh pcmanfm pulseaudio rxvt-unicode scrot vim vlc xarchiver xfce4-screenshooter xorg-xinit xorg-server`
+`sudo pacman -S alsa-utils asciiquarium audacity base-devel cmatrix cowsay feh figlet git hexchat htop i3 libreoffice-still lolcat lxappearance man mpv neofetch notepadqq openssh pcmanfm pulseaudio qutebrowser rxvt-unicode scrot vim vlc xarchiver xfce4-screenshooter xorg-xinit xorg-server`
 
 ## Fonts
 
