@@ -31,7 +31,7 @@ bindsym $mod+q kill
 bindsym $mod+d exec rofi -show run -font "DejaVu Serif 11"
 
 # Start Applications
-bindsym $mod+F1 exec icecat
+bindsym $mod+F1 exec qutebrowser
 bindsym $mod+F2 exec pcmanfm
 bindsym $mod+F3 exec notepadqq
 bindsym $mod+Scroll_Lock exec urxvt -e alsamixer
