@@ -81,47 +81,6 @@ rofi.terminal: urxvt
 *.color15:      #ffffff
 
 
-!! Minecraft Colors + Win95 Cyan
-
-
-!! special
-!*.foreground:   #ffffff
-!*.background:   #000000
-!*.cursorColor:  #ffffff
-!
-!! black
-!*.color0:       #000000
-!*.color8:       #505050
-!
-!! red
-!*.color1:       #FF5555
-!*.color9:       #FF5555
-!
-!! green
-!*.color2:       #55FF55
-!*.color10:      #55FF55
-!
-!! yellow
-!*.color3:       #FFFF55
-!*.color11:      #FFFF55
-!
-!! blue
-!*.color4:       #5555FF
-!*.color12:      #5555FF
-!
-!! magenta
-!*.color5:       #FF55FF
-!*.color13:      #FF55FF
-!
-!! cyan
-!*.color6:       #008080
-!*.color14:      #008080
-!
-!! white
-!*.color7:       #ffffff
-!*.color15:      #ffffff
-
-
 !! Massimo Colors
 
 
@@ -326,88 +285,6 @@ rofi.terminal: urxvt
 !! white
 !*.color7:       #00bb00
 !*.color15:      #00ff00
-
-
-!! Gotham
-
-
-!! special
-!*.foreground:   #98d1ce
-!*.background:   #0a0f14
-!*.cursorColor:  #98d1ce
-!
-!! black
-!*.color0:       #0a0f14
-!*.color8:       #10151b
-!
-!! red
-!*.color1:       #c33027
-!*.color9:       #d26939
-!
-!! green
-!*.color2:       #26a98b
-!*.color10:      #081f2d
-!
-!! yellow
-!*.color3:       #edb54b
-!*.color11:      #245361
-!
-!! blue
-!*.color4:       #195465
-!*.color12:      #093748
-!
-!! magenta
-!*.color5:       #4e5165
-!*.color13:      #888ba5
-!
-!! cyan
-!*.color6:       #33859d
-!*.color14:      #599caa
-!
-!! white
-!*.color7:       #98d1ce
-!*.color15:      #d3ebe9
-
-
-!! Navy & Ivory 
-
-
-!! special
-!*.foreground:   #e8dfd6
-!*.background:   #021b21
-!*.cursorColor:  #e8dfd6
-!
-!! black
-!*.color0:       #032c36
-!*.color8:       #065f73
-!
-!! red
-!*.color1:       #c2454e
-!*.color9:       #ef5847
-!
-!! green
-!*.color2:       #7cbf9e
-!*.color10:      #a2d9b1
-!
-!! yellow
-!*.color3:       #8a7a63
-!*.color11:      #beb090
-!
-!! blue
-!*.color4:       #2e3340
-!*.color12:      #61778d
-!
-!! magenta
-!*.color5:       #ff5879
-!*.color13:      #ff99a1
-!
-!! cyan
-!*.color6:       #44b5b1
-!*.color14:      #9ed9d8
-!
-!! white
-!*.color7:       #f2f1b9
-!*.color15:      #f6f6c9
 
 
 !! /a/ was a mistake

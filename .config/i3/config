@@ -8,15 +8,13 @@ exec_always urxvt -e xrdb .Xresources
 exec --no-startup-id nitrogen --restore
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-new_window normal
-new_float normal
-default_border pixel 1
+default_border normal
+default_floating_border normal 
 hide_edge_borders none
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font xft: DejaVu Serif 11
-
+font xft: DejaVu Sans Mono 11
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
@@ -28,7 +26,7 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+q kill
 
 # start program launcher
-bindsym $mod+d exec rofi -show run -font "DejaVu Serif 11"
+bindsym $mod+d exec rofi -show run -font "DejaVu Sans Mono 11"
 
 # Start Applications
 bindsym $mod+F1 exec qutebrowser
@@ -55,7 +53,6 @@ bindsym $mod+h split h
 bindsym $mod+v split v
 
 # tab mode
-bindsym $mod+t layout tabbed
 bindsym $mod+s layout toggle split
 
 # toggle fullscreen mode for the focused container
@@ -72,7 +69,6 @@ floating_minimum_size -1 x -1
 floating_maximum_size 1820 x 980
 
 # Workspace names
-
 set $ws1 1:I
 set $ws2 2:II
 set $ws3 3:III
@@ -83,6 +79,22 @@ set $ws7 7:VII
 set $ws8 8:VIII
 set $ws9 9:IX
 set $ws10 10:X
+
+
+# Set Workspaces to specific monitors
+#
+# When using this config on another machine make sure to either
+# comment this out, or alter it to fit said configuration
+workspace "1:I" output DVI-I-1
+workspace "2:II" output DVI-I-1
+workspace "3:III" output DVI-I-1
+workspace "4:IV" output DVI-I-1
+workspace "5:V" output DVI-I-1
+workspace "6:VI" output HDMI-0
+workspace "7:VII" output HDMI-0
+workspace "8:VIII" output HDMI-0
+workspace "9:IX" output HDMI-0
+workspace "10:X" output HDMI-0
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -199,20 +211,20 @@ bar {
         separator  $term_background
 
 #                      border  backgr. text
-        focused_workspace  $term_background $term_foreground $term_background
-        active_workspace   $term_background $term_foreground $term_background
-        inactive_workspace $term_background $term_background $term_foreground
-        binding_mode       $term_background $term_foreground $term_background
-        urgent_workspace   $term_background $term_color1 $term_background
+        focused_workspace  $term_foreground $term_background $term_foreground
+        active_workspace   $term_foreground $term_background $term_foreground
+        inactive_workspace $term_foreground $term_foreground $term_background
+        binding_mode       $term_foreground $term_foreground $term_background
+        urgent_workspace   $term_foreground $term_color1 $term_foreground
     }
 }
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
- client.focused          $term_color7 $term_color7 $term_background $term_foreground
- client.focused_inactive $term_color8 $term_color8 $term_background $term_foreground
- client.unfocused        $term_color8 $term_color8 $term_background $term_foreground
- client.urgent           $term_color8 $term_color8 $term_foreground $term_foreground
- client.placeholder      $term_color8 $term_foreground $term_foreground $term_foreground
+ client.focused          $term_foreground $term_background $term_foreground $term_foreground
+ client.focused_inactive $term_background $term_foreground $term_background $term_foreground
+ client.unfocused        $term_background $term_foreground $term_background $term_foreground
+ client.urgent           $term_foreground $term_color1 $term_foreground $term_foreground
+ client.placeholder      $term_foreground $term_foreground $term_foreground $term_foreground
 
 client.background $term_background

@@ -4,7 +4,7 @@ general {
         interval = 5
 }
 
-
+order += "tztime london" 
 order += "tztime local"
 
 
@@ -13,4 +13,3 @@ order += "tztime local"
 tztime local {
         format = "%A %B %d %Y | %H.%M.%S "
 }
-
