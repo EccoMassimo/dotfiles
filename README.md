@@ -20,14 +20,9 @@
 
 ### Browser
 
-- GNU IceCat - Extract tarball and run:
+- Install the `qutebrowser` package.
 
-`sudo ln -s icecat-bin /usr/bin/icecat`
-
-- When you are finished, move the .userjs file to your default profile folder & install ublock origin.
-(https://github.com/gorhill/uBlock/releases/download/firefox-legacy-1.16.4.10/uBlock0.firefox-legacy.xpi)
-
-
+- When you are finished, navigate to https://gitlab.com/jgkamat/jblock to download the latest version of `jblock` and clone it into ~/.config/qutebrowser
 
 ### AUR Packages
 
@@ -35,7 +30,7 @@
 
 ### Copy this command and run it to install everything 
 
-`sudo pacman -S alsa-utils asciiquarium audacity base-devel cmatrix cowsay feh figlet git hexchat htop i3 libreoffice-still lolcat lxappearance man mpv neofetch notepadqq openssh pcmanfm pulseaudio rxvt-unicode scrot vim vlc xarchiver xfce4-screenshooter xorg-xinit xorg-server`
+`sudo pacman -S alsa-utils asciiquarium audacity base-devel cmatrix cowsay feh figlet git hexchat htop i3 libreoffice-still lolcat lxappearance man mpv neofetch notepadqq openssh pcmanfm pulseaudio qutebrowser rxvt-unicode scrot vim vlc xarchiver xfce4-screenshooter xorg-xinit xorg-server`
 
 ## Fonts
 
