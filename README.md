@@ -18,11 +18,17 @@
 
 - Install the Yay AUR helper from git and use makepkg to built it.
 
-### Browser
+### Browser: Qutebrowser
 
 - Install the `qutebrowser` package.
 
 - When you are finished, navigate to https://gitlab.com/jgkamat/jblock to download the latest version of `jblock` and clone it into ~/.config/qutebrowser
+
+### Browser: Firefox (& Forks)
+
+- Install Firefox or a fork (Seamonkey, Palemoon, IceCat, Seamonkey etc.)
+
+- Just move `.other/user.js` into the profile directory for the browser.
 
 ### AUR Packages
 
