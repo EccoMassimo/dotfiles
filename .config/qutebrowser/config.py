@@ -15,7 +15,7 @@ c.url.start_pages = 'about:blank'
 c.completion.web_history.max_items = 100
 c.statusbar.position = 'bottom'
 c.tabs.position = 'top'
-c.content.host_blocking.enabled = True
+c.content.host_blocking.enabled = False
 c.content.headers.do_not_track = True
 #c.content.headers.user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.7 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.7'
     
