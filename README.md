@@ -32,7 +32,7 @@
 
 - Install Ublock Origin via Mozilla Addon Store for later versions and forks.
 
-- OR Install Ublock Origin Legacy for older forks (Palemoon & Seamonkey) `https://github.com/gorhill/uBlock/releases/download/firefox-legacy-1.16.4.11/uBlock0.firefox-legacy.xpi`
+- OR Install Ublock Origin Legacy for older forks (Palemoon & Seamonkey) https://github.com/gorhill/uBlock/releases/download/firefox-legacy-1.16.4.11/uBlock0.firefox-legacy.xpi
 
 ### AUR Packages
 
