@@ -6,7 +6,7 @@
 
 ## Add this to visudo
 
-`YOUR_USERNAME ALL=(ALL) NOPASSWD: ALL`
+- `YOUR_USERNAME ALL=(ALL) NOPASSWD: ALL`
 
 ## Programs
 
