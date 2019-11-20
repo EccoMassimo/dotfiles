@@ -6,6 +6,7 @@ set $mod Mod4
 # Auto Exec
 exec_always urxvt -e xrdb .Xresources
 exec --no-startup-id nitrogen --restore
+exec_always urxvt -e xrandr --output DP-1 --off --output DP-2 --off --output DP-3 --off --output HDMI-1 --mode 1920x1080 --pos 1920x0 --rotate normal --output DVI-D-1 --mode 1920x1080 --pos 0x0 --rotate normal
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border normal
@@ -67,9 +68,6 @@ bindsym $mod+space focus mode_toggle
 # floating window size
 floating_minimum_size -1 x -1
 floating_maximum_size 1820 x 980
-
-# Xrandr Settings
-exec_always urxvt -e xrandr --output DP-1 --off --output DP-2 --off --output DP-3 --off --output HDMI-1 --mode 1920x1080 --pos 1920x0 --rotate normal --output DVI-D-1 --mode 1920x1080 --pos 0x0 --rotate normal
 
 # Workspace names
 set $ws1 1:I

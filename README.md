@@ -14,6 +14,12 @@
 - To create a symbolic link use this command: 
 `sudo ln -s ~/Programs/PROGRAM/PROGRAM_RUN_FILE /usr/bin/SYMLINK_NAME`
 
+### Git
+
+- Configure the Git default editor with this command:
+
+- `git config core.editor vim`
+
 ### Yay
 
 - Install the Yay AUR helper from git and use makepkg to built it.
