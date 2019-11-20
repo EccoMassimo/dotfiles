@@ -68,6 +68,9 @@ bindsym $mod+space focus mode_toggle
 floating_minimum_size -1 x -1
 floating_maximum_size 1820 x 980
 
+# Xrandr Settings
+exec_always urxvt -e xrandr --output DP-1 --off --output DP-2 --off --output DP-3 --off --output HDMI-1 --mode 1920x1080 --pos 1920x0 --rotate normal --output DVI-D-1 --mode 1920x1080 --pos 0x0 --rotate normal
+
 # Workspace names
 set $ws1 1:I
 set $ws2 2:II
@@ -85,16 +88,16 @@ set $ws10 10:X
 #
 # When using this config on another machine make sure to either
 # comment this out, or alter it to fit said configuration
-workspace "1:I" output DVI-I-1
-workspace "2:II" output DVI-I-1
-workspace "3:III" output DVI-I-1
-workspace "4:IV" output DVI-I-1
-workspace "5:V" output DVI-I-1
-workspace "6:VI" output HDMI-0
-workspace "7:VII" output HDMI-0
-workspace "8:VIII" output HDMI-0
-workspace "9:IX" output HDMI-0
-workspace "10:X" output HDMI-0
+workspace "1:I" output DVI-D-1
+workspace "2:II" output DVI-D-1
+workspace "3:III" output  DVI-D-1  
+workspace "4:IV" output DVI-D-1 
+workspace "5:V" output DVI-D-1
+workspace "6:VI" output HDMI-1
+workspace "7:VII" output HDMI-1
+workspace "8:VIII" output HDMI-1
+workspace "9:IX" output HDMI-1
+workspace "10:X" output HDMI-1
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
