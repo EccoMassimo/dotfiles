@@ -11,8 +11,8 @@
 ## Programs
 
 - When installing generic program types (tarballs), place them in the ~/Programs folder.
-- To create a symbolic link use this command:
-`sudo ln -s PROGRAM_RUN_FILE /usr/bin/SYMLINK_NAME`
+- To create a symbolic link use this command: 
+`sudo ln -s ~/Programs/PROGRAM/PROGRAM_RUN_FILE /usr/bin/SYMLINK_NAME`
 
 ### Yay
 
