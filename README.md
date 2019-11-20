@@ -40,11 +40,9 @@
 
 ### Copy this command and run it to install everything 
 
-`sudo pacman -S alsa-utils asciiquarium audacity base-devel cmatrix cowsay feh figlet git htop i3-lock i3-status i3-wm irssi libreoffice-still lolcat lxappearance man mousepad mpv neofetch openssh pcmanfm pulseaudio qutebrowser rxvt-unicode scrot vim w3m xarchiver xfce4-screenshooter xorg-xinit xorg-server`
+`sudo pacman -S alsa-utils asciiquarium audacity base-devel cmatrix cowsay discord feh figlet git htop i3-lock i3-status i3-wm irssi libreoffice-still lolcat lxappearance man mousepad mpv neofetch nitrogen openssh p7zip pcmanfm pulseaudio rxvt-unicode scrot tty-dejavu vim w3m xarchiver xfce4-screenshooter xorg-xinit xorg-server`
 
 ## Fonts
-
-- Install the DejaVu Font Family
 
 - Also install the following for emoji, and asian language support.
 `sudo pacman -S noto-fonts-emoji`
