@@ -48,14 +48,7 @@
 
 `sudo pacman -S alsa-utils arandr asciiquarium audacity base-devel cmatrix cowsay discord feh figlet git htop i3-lock i3-status i3-wm irssi libreoffice-still lolcat lxappearance man mousepad mpv neofetch nitrogen openssh p7zip pcmanfm pulseaudio rxvt-unicode scrot tty-dejavu vim w3m xarchiver xfce4-screenshooter xorg-xinit xorg-server`
 
-`apt install sudo vim xorg rxvt-unicode i3 w3m pcmanfm rofi fonts-dejavu git nitrogen ranger ssh alsa-utils pulseaudio arandr lxappearance cowsay cmatrix mousepad xfce4-screenshooter p7zip man mpv xarchiver libreoffice audacity dbus fonts-noto-color-emoji`
-
-## Fonts
-
-- Also install the following for emoji, and asian language support.
-`sudo pacman -S noto-fonts-emoji`
-
-`yay -S opendesktop-fonts otf-ipafont ttf-arphic-ukai ttf-arphic-uming ttf-baekmuk ttf-hannom ttf-monapo ttf-mplus ttf-nanum ttf-nanumgothic_coding ttf-sazanami ttf-tw ttf-vlgothic wqy-bitmapfont wqy-microhei wqy-zenhei --noconfirm`
+`apt install sudo vim xorg rxvt-unicode i3 w3m pcmanfm rofi fonts-dejavu git nitrogen ranger ssh alsa-utils pulseaudio arandr lxappearance cowsay cmatrix mousepad xfce4-screenshooter p7zip man mpv xarchiver libreoffice audacity dbus fonts-noto-color-emoji xfonts-intl-japanese`
 
 ## Other Configuration
 
