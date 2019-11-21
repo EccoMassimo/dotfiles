@@ -11,8 +11,12 @@
 ## Programs
 
 - When installing generic program types (tarballs), place them in the ~/Programs folder.
+
 - To create a symbolic link use this command: 
 `sudo ln -s ~/Programs/PROGRAM/PROGRAM_RUN_FILE /usr/bin/SYMLINK_NAME`
+
+- To install .deb packages use this command:
+`sudo dpkg -i PACKAGENAME.deb
 
 ### Git
 
@@ -40,13 +44,11 @@
 
 - OR Install Ublock Origin Legacy for older forks (Palemoon & Seamonkey) https://github.com/gorhill/uBlock/releases/download/firefox-legacy-1.16.4.11/uBlock0.firefox-legacy.xpi
 
-### AUR Packages
-
-`yay -S steam tty-clock minecraft-launcher font-manager`
-
 ### Copy this command and run it to install everything 
 
 `sudo pacman -S alsa-utils arandr asciiquarium audacity base-devel cmatrix cowsay discord feh figlet git htop i3-lock i3-status i3-wm irssi libreoffice-still lolcat lxappearance man mousepad mpv neofetch nitrogen openssh p7zip pcmanfm pulseaudio rxvt-unicode scrot tty-dejavu vim w3m xarchiver xfce4-screenshooter xorg-xinit xorg-server`
+
+`apt install sudo vim xorg rxvt-unicode i3 w3m pcmanfm rofi fonts-dejavu git nitrogen ranger
 
 ## Fonts
 
