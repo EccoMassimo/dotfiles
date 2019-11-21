@@ -52,7 +52,7 @@ OR Install Ublock Origin Legacy for older forks (Palemoon & Seamonkey) https://g
 
 ## AMD Driver Support
 
-Add `non-free` and `contrib` to /etc/apt/sources.list
+Add `non-free` and `contrib` to `/etc/apt/sources.list`
 
 Run This: `sudo apt install firmware-linux firmware-linux-nonfree libdrm-amdgpu1 xserver-xorg-video-amdgpu mesa-opencl-icd mesa-vulkan-drivers libvulkan1 vulkan-tools vulkan-utils vulkan-validationlayers`
 
