@@ -2,7 +2,7 @@
 
 Copy each of these files into your ~/ directory. This will update all of the configs and stuff automagically.
 
-This is mostly intended to work on *Arch Linux* and *Debian 10*, however it can be interpreted to work with other distros.
+This is mostly intended to work on *Debian 10*, however it can be interpreted to work with other distros.
 
 ## Add this to visudo
 
@@ -24,10 +24,6 @@ Configure the Git default editor with this command:
 
 `git config core.editor vim`
 
-### Yay
-
-Install the Yay AUR helper from git and use makepkg to built it.
-
 ### Browser: Qutebrowser
 
 Install the `qutebrowser` package.
@@ -45,8 +41,6 @@ Install Ublock Origin via Mozilla Addon Store for later versions and forks.
 OR Install Ublock Origin Legacy for older forks (Palemoon & Seamonkey) https://github.com/gorhill/uBlock/releases/download/firefox-legacy-1.16.4.11/uBlock0.firefox-legacy.xpi
 
 ### Copy this command and run it to install everything 
-
-`sudo pacman -S alsa-utils arandr asciiquarium audacity base-devel cmatrix cowsay discord feh figlet git htop i3-lock i3-status i3-wm irssi libreoffice-still lolcat lxappearance man mousepad mpv neofetch nitrogen openssh p7zip pcmanfm pulseaudio rxvt-unicode scrot tty-dejavu vim w3m xarchiver xfce4-screenshooter xorg-xinit xorg-server`
 
 `apt install sudo vim xorg rxvt-unicode i3 w3m pcmanfm rofi fonts-dejavu git nitrogen ranger ssh alsa-utils pulseaudio arandr lxappearance cowsay cmatrix mousepad xfce4-screenshooter p7zip man mpv xarchiver libreoffice audacity dbus fonts-noto-color-emoji xfonts-intl-japanese xfonts-intl-chinese irssi feh htop neofetch`
 
