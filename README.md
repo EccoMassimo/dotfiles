@@ -59,7 +59,8 @@ OR Install Ublock Origin Legacy for older forks (Palemoon & Seamonkey) https://g
 
 ### Copy this command and run it to install everything 
 
-`apt install sudo vim xorg rxvt-unicode i3 w3m pcmanfm rofi fonts-dejavu git nitrogen ranger ssh alsa-utils pulseaudio arandr lxappearance cowsay cmatrix mousepad xfce4-screenshooter p7zip man mpv xarchiver libreoffice audacity dbus fonts-noto-color-emoji fonts-arphic-uming fonts-wqy-zenhei fonts-unfonts-core fonts-lexi-saebom irssi feh htop neofetch ntp ttf-mscorefonts-installer software-properties-common`
+Main Packages:
+`apt install sudo vim xorg rxvt-unicode i3 w3m pcmanfm rofi fonts-dejavu git nitrogen ranger ssh alsa-utils pulseaudio arandr lxappearance cowsay cmatrix mousepad xfce4-screenshooter p7zip man mpv xarchiver libreoffice audacity dbus fonts-noto-color-emoji fonts-arphic-uming fonts-wqy-zenhei fonts-unfonts-core fonts-lexi-saebom irssi feh htop neofetch ntp ttf-mscorefonts-installer software-properties-common steam`
 
 ## AMD Driver Support
 
