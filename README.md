@@ -18,6 +18,12 @@ To create a symbolic link use this command:
 To install .deb packages use this command:
 `sudo dpkg -i PACKAGENAME.deb`
 
+To enable 32 bit support:
+`sudo dpkg --add-architecture i386`
+
+Fix Broken:
+`sudo apt --fix-broken install`
+
 ### Git
 
 Configure the Git default editor with this command:
