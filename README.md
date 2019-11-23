@@ -42,7 +42,7 @@ OR Install Ublock Origin Legacy for older forks (Palemoon & Seamonkey) https://g
 
 ### Copy this command and run it to install everything 
 
-`apt install sudo vim xorg rxvt-unicode i3 w3m pcmanfm rofi fonts-dejavu git nitrogen ranger ssh alsa-utils pulseaudio arandr lxappearance cowsay cmatrix mousepad xfce4-screenshooter p7zip man mpv xarchiver libreoffice audacity dbus fonts-noto-color-emoji fonts-arphic-uming fonts-wqy-zenhei fonts-unfonts-core irssi feh htop neofetch`
+`apt install sudo vim xorg rxvt-unicode i3 w3m pcmanfm rofi fonts-dejavu git nitrogen ranger ssh alsa-utils pulseaudio arandr lxappearance cowsay cmatrix mousepad xfce4-screenshooter p7zip man mpv xarchiver libreoffice audacity dbus fonts-noto-color-emoji fonts-arphic-uming fonts-wqy-zenhei fonts-unfonts-core fonts-lexi-saebom irssi feh htop neofetch ntp ttf-mscorefonts-installer`
 
 ## AMD Driver Support
 
@@ -53,4 +53,7 @@ Run This: `sudo apt install firmware-linux firmware-linux-nonfree libdrm-amdgpu1
 
 ## Other Configuration
 
-- Mouse Acceleration: `xset m 0 0 ; sudo cp .other/50-mouse-acceleration.conf /etc/X11/xorg.conf.d/50-mouse-acceleration.conf`
+Mouse Acceleration: `xset m 0 0 ; sudo cp .other/50-mouse-acceleration.conf /etc/X11/xorg.conf.d/50-mouse-acceleration.conf`
+
+Clock: `sudo timedatectl set-timezone America/New_York`
+
