@@ -150,13 +150,18 @@ bindsym $mod+Shift+r restart
 
 bindsym $mod+Shift+l exec i3lock -c 000000
 
-bindsym $mod+Shift+q mode "PRESS Q TO QUIT"
-mode "PRESS Q TO QUIT" {
-	bindsym q exec i3-msg exit
-
-        bindsym Return mode "default"
+bindsym $mod+Shift+q mode "PRESS RETURN TO STOP X"
+mode "PRESS RETURN TO STOP X" {
+	bindsym Return exec i3-msg exit
         bindsym Escape mode "default"
 }
+
+bindsym $mod+Shift+Escape mode "PRESS RETURN TO SHUTDOWN NOW"
+mode "PRESS RETURN TO SHUTDOWN NOW" {
+	bindsym Return exec sudo shutdown now
+	bindsym Escape mode "default"
+}
+
 # Resize window (you can also use the mouse for that)
 bindsym $mod+r mode "RESIZE"
 mode "RESIZE" {
@@ -215,7 +220,7 @@ bar {
         focused_workspace  $term_color7 $term_color8 $term_foreground
         active_workspace   $term_color8 $term_color7 $term_background
         inactive_workspace $term_color8 $term_color7 $term_background
-        binding_mode       $term_color8 $term_color5 $term_foreground
+        binding_mode       $term_color8 $term_color1 $term_foreground
         urgent_workspace   $term_color8 $term_color1 $term_foreground
     }
 }
