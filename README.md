@@ -18,6 +18,12 @@ To create a symbolic link use this command:
 To install .deb packages use this command:
 `sudo dpkg -i PACKAGENAME.deb`
 
+To enable 32 bit support:
+`sudo dpkg --add-architecture i386`
+
+Fix Broken:
+`sudo apt --fix-broken install`
+
 ### Git
 
 Configure the Git default editor with this command:
@@ -40,9 +46,29 @@ Install Ublock Origin via Mozilla Addon Store for later versions and forks.
 
 OR Install Ublock Origin Legacy for older forks (Palemoon & Seamonkey) https://github.com/gorhill/uBlock/releases/download/firefox-legacy-1.16.4.11/uBlock0.firefox-legacy.xpi
 
+### Java 
+
+`wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -`
+
+`sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/`
+
+`sudo apt update -y`
+
+`sudo apt install adoptopenjdk-8-hotspot -y`
+
+### Etcher
+
+`echo "deb https://deb.etcher.io stable etcher" | sudo tee /etc/apt/sources.list.d/balena-etcher.list`
+
+`sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61`
+
+`sudo apt-get update`
+`sudo apt-get install balena-etcher-electron`
+
 ### Copy this command and run it to install everything 
 
-`apt install sudo vim xorg rxvt-unicode i3 w3m pcmanfm rofi fonts-dejavu git nitrogen ranger ssh alsa-utils pulseaudio arandr lxappearance cowsay cmatrix mousepad xfce4-screenshooter p7zip man mpv xarchiver libreoffice audacity dbus fonts-noto-color-emoji fonts-arphic-uming fonts-wqy-zenhei fonts-unfonts-core fonts-lexi-saebom irssi feh htop neofetch ntp ttf-mscorefonts-installer`
+Main Packages:
+`apt install sudo vim xorg rxvt-unicode i3 w3m pcmanfm rofi fonts-dejavu git nitrogen ranger ssh alsa-utils pulseaudio arandr lxappearance cowsay cmatrix mousepad xfce4-screenshooter p7zip man mpv xarchiver libreoffice audacity dbus fonts-noto-color-emoji fonts-arphic-uming fonts-wqy-zenhei fonts-unfonts-core fonts-lexi-saebom irssi feh htop neofetch ntp ttf-mscorefonts-installer software-properties-common steam`
 
 ## AMD Driver Support
 
