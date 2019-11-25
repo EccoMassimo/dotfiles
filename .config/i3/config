@@ -6,12 +6,12 @@ set $mod Mod4
 # Auto Exec
 exec_always urxvt -e xrdb .Xresources
 exec --no-startup-id nitrogen --restore
-exec_always urxvt -e xrandr --output DP-1 --off --output DP-2 --off --output DP-3 --off --output HDMI-1 --mode 1920x1080 --pos 1920x0 --rotate normal --output DVI-D-1 --mode 1920x1080 --pos 0x0 --rotate normal
+exec_always xrandr --output DisplayPort-1 --off --output DisplayPort-0 --off --output DisplayPort-2 --off --output DVI-D-0 --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-A-0 --mode 1920x1080 --pos 1920x0 --rotate normal
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border normal
 default_floating_border normal 
-hide_edge_borders none
+hide_edge_borders both
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -86,16 +86,16 @@ set $ws10 10:X
 #
 # When using this config on another machine make sure to either
 # comment this out, or alter it to fit said configuration
-workspace "1:I" output DVI-D-1
-workspace "2:II" output DVI-D-1
-workspace "3:III" output  DVI-D-1  
-workspace "4:IV" output DVI-D-1 
-workspace "5:V" output DVI-D-1
-workspace "6:VI" output HDMI-1
-workspace "7:VII" output HDMI-1
-workspace "8:VIII" output HDMI-1
-workspace "9:IX" output HDMI-1
-workspace "10:X" output HDMI-1
+workspace "1:I" output DVI-D-0
+workspace "2:II" output DVI-D-0
+workspace "3:III" output  DVI-D-0  
+workspace "4:IV" output DVI-D-0 
+workspace "5:V" output DVI-D-0
+workspace "6:VI" output HDMI-A-0
+workspace "7:VII" output HDMI-A-0
+workspace "8:VIII" output HDMI-A-0
+workspace "9:IX" output HDMI-A-0
+workspace "10:X" output HDMI-A-0
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -224,7 +224,7 @@ bar {
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
- client.focused          $term_color7 $term_color8 $term_foreground $term_foreground
+ client.focused          $term_color7 $term_color6 $term_foreground $term_foreground
  client.focused_inactive $term_color8 $term_color7 $term_background $term_foreground
  client.unfocused        $term_color8 $term_color7 $term_background $term_foreground
  client.urgent           $term_color8 $term_color1 $term_foreground $term_foreground
