@@ -214,7 +214,7 @@ bar {
         separator  $term_background
 
 #                      border  backgr. text
-        focused_workspace  $term_color7 $term_color8 $term_foreground
+        focused_workspace  $term_color8 $term_color8 $term_foreground
         active_workspace   $term_color8 $term_color7 $term_background
         inactive_workspace $term_color8 $term_color7 $term_background
         binding_mode       $term_color8 $term_color1 $term_foreground
