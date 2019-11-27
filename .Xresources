@@ -15,8 +15,7 @@ URxvt.boldFont: xft: DejaVu Sans Mono: size=11
 
 !! Rofi Settings
 
-
-!! Plain Black and White
+!! B&W
 rofi.color-enabled: true 
 rofi.color-window: #000000, #ffffff, #000000
 rofi.color-normal: #000000, #ffffff, #000000, #ffffff, #000000
