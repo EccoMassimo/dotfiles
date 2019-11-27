@@ -33,6 +33,7 @@ bindsym $mod+d exec rofi -show run -font "DejaVu Sans Mono 11"
 bindsym $mod+F1 exec palemoon
 bindsym $mod+F2 exec pcmanfm
 bindsym $mod+F3 exec mousepad
+bindsym $mod+F4 exec discord
 bindsym $mod+Scroll_Lock exec urxvt -e alsamixer
 bindsym $mod+Pause exec urxvt -e htop
 bindsym $mod+Print exec xfce4-screenshooter
