@@ -36,7 +36,7 @@ Install the `qutebrowser` package.
 
 When you are finished, navigate to https://gitlab.com/jgkamat/jblock to download the latest version of `jblock` and clone it into ~/.config/qutebrowser
 
-### Browser: Firefox (& Forks)
+### Browser: Firefox (& Forks) 
 
 Install Firefox or a fork (Seamonkey, Palemoon, IceCat, Seamonkey etc.)
 
