@@ -43,7 +43,7 @@ user_pref("privacy.sanitize.sanitizeOnShutdown", true);
 user_pref("browser.sessionstore.max_tabs_undo",  0);
 
 //Anti-Botnet
-user_pref("privacy.firstparty.isolate", true);
+user_pref("privacy.firstparty.isolate", true); //Set this to true for enhanced privacy
 user_pref("privacy.resistFingerprinting", true);
 user_pref("privacy.trackingprotection.fingerprinting.enabled" , true);
 user_pref("privacy.trackingprotection.cryptomining.enabled", true);
@@ -56,13 +56,11 @@ user_pref("media.eme.enabled", false);
 user_pref("media.gmp-widevinecdm.enabled", false);
 user_pref("media.navigator.enabled", false);
 user_pref("network.cookie.cookieBehavior", 1);
-user_pref("network.http.referer.XOriginPolicy", 2);
+user_pref("network.http.referer.XOriginPolicy", 0);
 user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
 user_pref("webgl.disabled", true);
 user_pref("browser.sessionstore.privacy_level", 2);
 user_pref("network.IDN_show_punycode", true);
-	
-//Anti-Botnet for Palemoon
 user_pref("extensions.blocklist.enabled", false);
 user_pref("services.sync.prefs.sync.security.OCSP.enabled", false);
 user_pref("security.OCSP.GET.enabled", false);

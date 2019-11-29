@@ -30,7 +30,7 @@ bindsym $mod+q kill
 bindsym $mod+d exec rofi -show run -font "DejaVu Sans Mono 11"
 
 # Start Applications
-bindsym $mod+F1 exec palemoon
+bindsym $mod+F1 exec icecat
 bindsym $mod+F2 exec pcmanfm
 bindsym $mod+F3 exec mousepad
 bindsym $mod+F4 exec discord
@@ -158,26 +158,19 @@ mode "PRESS RETURN TO STOP X" {
 bindsym $mod+Shift+Escape mode "PRESS RETURN TO SHUTDOWN NOW"
 mode "PRESS RETURN TO SHUTDOWN NOW" {
 	bindsym Return exec sudo shutdown now
+
 	bindsym Escape mode "default"
 }
 
-# Resize window (you can also use the mouse for that)
+# Resize window xbindsym $mod+r mode "RESIZE"
 bindsym $mod+r mode "RESIZE"
 mode "RESIZE" {
-        # These bindings trigger as soon as you enter the resize mode
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 5 px or 5 ppt
-        bindsym Down resize grow height 5 px or 5 ppt
-        bindsym Up resize shrink height 5 px or 5 ppt
-        bindsym Right resize grow width 5 px or 5 ppt
-
-        # exit resize mode: Enter or Escape
-        bindsym Return mode "default"
+        
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+ 
         bindsym Escape mode "default"
 }
 
