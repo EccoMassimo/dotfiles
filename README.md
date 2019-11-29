@@ -42,7 +42,7 @@ Install Firefox or a fork (Seamonkey, Palemoon, IceCat, Seamonkey etc.)
 
 Just move `.other/user.js` into the profile directory for the browser.
 
-Install Ublock Origin via Mozilla Addon Store for later versions and forks.
+Install Ublock Origin via Mozilla Addon Store for later versions and forks. https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
 
 OR Install Ublock Origin Legacy for older forks (Palemoon & Seamonkey) https://github.com/gorhill/uBlock/releases/download/firefox-legacy-1.16.4.11/uBlock0.firefox-legacy.xpi
 
