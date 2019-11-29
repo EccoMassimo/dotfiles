@@ -34,9 +34,11 @@ bindsym $mod+F1 exec icecat
 bindsym $mod+F2 exec pcmanfm
 bindsym $mod+F3 exec mousepad
 bindsym $mod+F4 exec discord
+bindsym $mod+Print exec xfce4-screenshooter
 bindsym $mod+Scroll_Lock exec urxvt -e alsamixer
 bindsym $mod+Pause exec urxvt -e htop
-bindsym $mod+Print exec xfce4-screenshooter
+bindsym $mod+Shift+Pause exec urxvt -e sudo radeontop
+
 
 # change focus
 bindsym $mod+Left focus left
@@ -209,11 +211,11 @@ bar {
         separator  $term_background
 
 #                      border  backgr. text
-        focused_workspace  $term_color7 $term_color8 $term_foreground
-        active_workspace   $term_color8 $term_color7 $term_background
-        inactive_workspace $term_color8 $term_color7 $term_background
-        binding_mode       $term_color8 $term_color1 $term_foreground
-        urgent_workspace   $term_color8 $term_color1 $term_foreground
+        focused_workspace  $term_background $term_background $term_foreground
+        active_workspace   $term_background $term_background $term_color8
+        inactive_workspace $term_background $term_background $term_color8
+        binding_mode       $term_background $term_background $term_color5
+        urgent_workspace   $term_background $term_background $term_color1
     }
 }
 
