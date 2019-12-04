@@ -27,7 +27,7 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+q kill
 
 # start program launcher
-bindsym $mod+d exec rofi -show run -font "DejaVu Sans Mono 11"
+bindsym $mod+d exec dmenu_run -nb black -sb gray -nf white -sf black -b
 
 # Start Applications
 bindsym $mod+F1 exec icecat
@@ -165,16 +165,10 @@ mode "PRESS RETURN TO SHUTDOWN NOW" {
 }
 
 # Resize window xbindsym $mod+r mode "RESIZE"
-bindsym $mod+r mode "RESIZE"
-mode "RESIZE" {
-        
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
- 
-        bindsym Escape mode "default"
-}
+ bindsym $mod+mod1+Left resize shrink width 10 px or 10 ppt
+ bindsym $mod+mod1+Down resize grow height 10 px or 10 ppt
+ bindsym $mod+mod1+Up resize shrink height 10 px or 10 ppt
+ bindsym $mod+mod1+Right resize grow width 10 px or 10 ppt
 
 # Color palette used for the terminal ( ~/.Xresources file )
 
@@ -214,7 +208,7 @@ bar {
         focused_workspace  $term_background $term_background $term_foreground
         active_workspace   $term_background $term_background $term_color8
         inactive_workspace $term_background $term_background $term_color8
-        binding_mode       $term_background $term_background $term_color5
+        binding_mode       $term_background $term_background $term_color9
         urgent_workspace   $term_background $term_background $term_color1
     }
 }
