@@ -27,7 +27,7 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+q kill
 
 # start program launcher
-bindsym $mod+d exec dmenu_run -nb black -sb gray -nf white -sf black 
+bindsym $mod+d exec dmenu_run -nb black -sb gray -nf white -sf black -b
 
 # Start Applications
 bindsym $mod+F1 exec icecat
@@ -195,7 +195,7 @@ set_from_resource $term_color15    color15
 bar {
 	i3bar_command i3bar
 	status_command i3status
-	position top	
+	position bottom	
 
 	strip_workspace_numbers yes
 
