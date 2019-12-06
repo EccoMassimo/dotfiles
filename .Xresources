@@ -15,7 +15,7 @@ URxvt.boldFont: xft: DejaVu Sans Mono: size=11
 !URxvt.font: xft: Unifont : size=12
 !URxvt.boldFont: xft: Unifont : size=12
 urxvt*depth: 32
-urxvt*background: rgba:0000/0000/0200/c800
+urxvt*background: rgba:0000/0000/0200/cccc
 
 
 
