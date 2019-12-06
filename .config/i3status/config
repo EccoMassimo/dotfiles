@@ -3,9 +3,9 @@ general {
         colors = false
         interval = 5
 }
-
+                                               
 order += "tztime local"
-
+ 
 tztime local {
         format = "%A %B %d %Y | %H.%M.%S "
 }

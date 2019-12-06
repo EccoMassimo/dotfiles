@@ -9,8 +9,8 @@ exec --no-startup-id nitrogen --restore
 exec_always xrandr --output DisplayPort-1 --off --output DisplayPort-0 --off --output DisplayPort-2 --off --output DVI-D-0 --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-A-0 --mode 1920x1080 --pos 1920x0 --rotate normal
 exec compton
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border normal
-default_floating_border normal
+default_border none
+default_floating_border none
 hide_edge_borders smart
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -27,12 +27,12 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+q kill
 
 # start program launcher
-bindsym $mod+d exec dmenu_run -nb black -sb gray -nf white -sf black -b
+bindsym $mod+d exec dmenu_run -nb black -sb gray -nf white -sf black 
 
 # Start Applications
 bindsym $mod+F1 exec icecat
 bindsym $mod+F2 exec pcmanfm
-bindsym $mod+F3 exec mousepad
+bindsym $mod+F3 exec kate
 bindsym $mod+F4 exec discord
 bindsym $mod+Print exec xfce4-screenshooter
 bindsym $mod+Scroll_Lock exec urxvt -e alsamixer
@@ -195,7 +195,7 @@ set_from_resource $term_color15    color15
 bar {
 	i3bar_command i3bar
 	status_command i3status
-	position bottom	
+	position top	
 
 	strip_workspace_numbers yes
 
@@ -222,3 +222,8 @@ bar {
  client.placeholder      $term_foreground $term_foreground $term_foreground $term_foreground
 
 client.background $term_background
+
+# i3-gaps config
+gaps inner 10
+gaps outer 10
+smart_gaps on
