@@ -30,6 +30,23 @@ Configure the Git default editor with this command:
 
 `git config core.editor vim`
 
+### i3-gaps
+
+`sudo apt install gcc make dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-shape0`
+
+`git clone https://www.github.com/Airblader/i3 i3-gaps
+cd i3-gaps`
+
+`autoreconf --force --install`
+
+`rm -rf build/`
+
+`mkdir -p build && cd build/`
+
+`../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers`
+
+`make && sudo make install`
+
 ### Browser: Qutebrowser
 
 Install the `qutebrowser` package.
@@ -80,11 +97,8 @@ http://download.opensuse.org/repositories/home:/strycore/Debian_9.0/ ./"
 ### APT Packages
 
 Main Packages:
-<<<<<<< HEAD
-`apt install sudo vim xorg rxvt-unicode i3 w3m pcmanfm rofi fonts-dejavu git nitrogen ranger ssh alsa-utils pulseaudio arandr lxappearance cowsay cmatrix mousepad xfce4-screenshooter p7zip man mpv xarchiver libreoffice audacity dbus fonts-noto-color-emoji fonts-arphic-uming fonts-wqy-zenhei fonts-unfonts-core fonts-lexi-saebom irssi feh htop neofetch ntp ttf-mscorefonts-installer software-properties-common steam bc ed krita lolcat figlet adwaita-qt adwaita-icon-theme clearlooks-phenix-theme screenkey`
-=======
-`apt install sudo vim xorg rxvt-unicode i3 w3m pcmanfm dmenu fonts-dejavu git nitrogen ranger ssh alsa-utils pulseaudio arandr lxappearance cowsay cmatrix mousepad xfce4-screenshooter p7zip man mpv xarchiver libreoffice audacity dbus fonts-noto-color-emoji fonts-arphic-uming fonts-wqy-zenhei fonts-unfonts-core fonts-lexi-saebom irssi feh htop neofetch ntp ttf-mscorefonts-installer software-properties-common steam bc ed krita lolcat figlet adwaita-qt adwaita-icon-theme clearlooks-phenix-theme radeontop`
->>>>>>> b4bbafd6a5fbdf6314b981bf77b1735fe2d0e3ab
+
+`apt install sudo vim xorg rxvt-unicode i3 w3m pcmanfm dmenu fonts-dejavu git nitrogen ranger ssh alsa-utils pulseaudio arandr lxappearance cowsay cmatrix mousepad xfce4-screenshooter p7zip man mpv xarchiver libreoffice audacity dbus fonts-noto-color-emoji fonts-arphic-uming fonts-wqy-zenhei fonts-unfonts-core fonts-lexi-saebom irssi feh htop neofetch ntp ttf-mscorefonts-installer software-properties-common steam bc ed krita lolcat figlet adwaita-qt adwaita-icon-theme clearlooks-phenix-theme screenkey obs-studio`
 
 ## AMD Driver Support
 
