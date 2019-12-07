@@ -15,12 +15,10 @@ URxvt.boldFont: xft: DejaVu Sans Mono: size=11
 !URxvt.font: xft: Unifont : size=12
 !URxvt.boldFont: xft: Unifont : size=12
 urxvt*depth: 32
-urxvt*background: rgba:0000/0000/0200/cccc
+urxvt*background: rgba:0000/0000/0000/eeee
 
 
-
-
-!! CGA 16 Color
+!! Massimo v2
 
 
 ! special
@@ -33,35 +31,35 @@ urxvt*background: rgba:0000/0000/0200/cccc
 *.color8:       #555555
 
 ! red
-*.color1:       #aa0000
-*.color9:       #ff5555
+*.color1:       #e95678
+*.color9:       #e95678
 
 ! green
-*.color2:       #00aa00
-*.color10:      #55ff55
+*.color2:       #09f7a0
+*.color10:      #09f7a0
 
 ! yellow
-*.color3:       #aa5500
-*.color11:      #ffff55
+*.color3:       #fab795
+*.color11:      #fab795
 
 ! blue
-*.color4:       #0000aa
-*.color12:      #5555ff
+*.color4:       #545ba5
+*.color12:      #545ba5
 
 ! magenta
-*.color5:       #aa00aa
-*.color13:      #ff55ff
+*.color5:       #b877db
+*.color13:      #b877db
 
 ! cyan
-*.color6:       #00aaaa
-*.color14:      #55ffff
+*.color6:       #008080
+*.color14:      #008080
 
 ! white
 *.color7:       #aaaaaa
 *.color15:      #ffffff
 
 
-!! Other Colors
+!! CGA 16 Color
 
 
 !! special
@@ -74,28 +72,28 @@ urxvt*background: rgba:0000/0000/0200/cccc
 !*.color8:       #555555
 !
 !! red
-!*.color1:       #ff5555
+!*.color1:       #aa0000
 !*.color9:       #ff5555
 !
 !! green
-!*.color2:       #55ff55
+!*.color2:       #00aa00
 !*.color10:      #55ff55
 !
 !! yellow
-!*.color3:       #ffff55
+!*.color3:       #aa5500
 !*.color11:      #ffff55
 !
 !! blue
-!*.color4:       #5555ff
+!*.color4:       #0000aa
 !*.color12:      #5555ff
 !
 !! magenta
-!*.color5:       #ff55ff
+!*.color5:       #aa00aa
 !*.color13:      #ff55ff
 !
 !! cyan
-!*.color6:       #008080
-!*.color14:      #008080
+!*.color6:       #00aaaa
+!*.color14:      #55ffff
 !
 !! white
 !*.color7:       #aaaaaa
@@ -103,42 +101,4 @@ urxvt*background: rgba:0000/0000/0200/cccc
 
 
 
-!! Massimo Colors
 
-
-!! special
-!*.foreground:   #cccccc
-!*.background:   #101010
-!*.cursorColor:  #cccccc
-!
-!! black
-!*.color0:       #101010
-!*.color8:       #505050
-!
-!! red
-!*.color1:       #e95678
-!*.color9:       #e95678
-!
-!! green
-!*.color2:       #09f7a0
-!*.color10:      #09f7a0
-!
-!! yellow
-!*.color3:       #fab795
-!*.color11:      #fab795
-!
-!! blue
-!*.color4:       #545ba5
-!*.color12:      #545ba5
-!
-!! magenta
-!*.color5:       #b877db
-!*.color13:      #b877db
-!
-!! cyan
-!*.color6:       #008080
-!*.color14:      #008080
-!
-!! white
-!*.color7:       #cccccc
-!*.color15: 	 #ffffff

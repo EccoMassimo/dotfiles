@@ -7,4 +7,4 @@
 # invoke global X session script
 #. /etc/X11/Xsession
 
-exec dwm
+exec i3
