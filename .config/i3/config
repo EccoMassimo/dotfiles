@@ -9,8 +9,8 @@ exec --no-startup-id nitrogen --restore
 exec_always xrandr --output DisplayPort-1 --off --output DisplayPort-0 --off --output DisplayPort-2 --off --output DVI-D-0 --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-A-0 --mode 1920x1080 --pos 1920x0 --rotate normal
 exec compton
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border none
-default_floating_border none
+default_border pixel 2
+default_floating_border pixel 2
 hide_edge_borders smart
 
 # Gaps
