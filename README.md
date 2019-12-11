@@ -81,7 +81,7 @@ http://download.opensuse.org/repositories/home:/strycore/Debian_9.0/ ./"
 
 Main Packages:
 
-`apt install sudo vim xorg rxvt-unicode w3m pcmanfm dmenu fonts-dejavu git nitrogen ranger ssh alsa-utils pulseaudio arandr lxappearance cowsay cmatrix mousepad xfce4-screenshooter p7zip man mpv xarchiver libreoffice audacity dbus fonts-noto-color-emoji fonts-arphic-uming fonts-wqy-zenhei fonts-unfonts-core fonts-lexi-saebom irssi feh htop neofetch ntp ttf-mscorefonts-installer software-properties-common steam bc ed krita lolcat figlet adwaita-qt adwaita-icon-theme clearlooks-phenix-theme screenkey obs-studio xcompmgr calcurse mpd`
+`apt install sudo vim xorg rxvt-unicode w3m pcmanfm dmenu fonts-dejavu git nitrogen ranger ssh alsa-utils pulseaudio arandr lxappearance cowsay cmatrix mousepad xfce4-screenshooter p7zip man mpv xarchiver libreoffice audacity dbus fonts-noto-color-emoji fonts-arphic-uming fonts-wqy-zenhei fonts-unfonts-core fonts-lexi-saebom irssi sxiv htop neofetch ntp ttf-mscorefonts-installer software-properties-common steam bc ed krita lolcat figlet adwaita-qt adwaita-icon-theme clearlooks-phenix-theme screenkey obs-studio xcompmgr calcurse mpd`
 
 ## AMD Driver Support
 
