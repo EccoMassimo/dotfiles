@@ -1,24 +1,4 @@
-!! Xft (fonts)
-Xft.antialias: true
-
-!! URxvt 
-URxvt.letterSpace: 0
-URxvt.lineSpace: 0
-URxvt.internalBorder: 15 
-URxvt.cursorBlink: true
-URxvt.cursorUnderline: false
-URxvt.saveline: 3000 
-URxvt.scrollBar: false
-URxvt.scrollBar_right: false
-URxvt.font: xft: DejaVu Sans Mono : size=11
-URxvt.boldFont: xft: DejaVu Sans Mono: size=11
-!URxvt.font: xft: Unifont : size=12
-!URxvt.boldFont: xft: Unifont : size=12
-urxvt*depth: 32
-urxvt*background: rgba:0000/0000/0000/eeee
-
-
-!! Massimo v2
+!! MI Colors 
 
 
 ! special
