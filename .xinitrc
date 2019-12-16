@@ -11,4 +11,4 @@
 
 # Execute window manager
 
-exec i3
+exec dwm
