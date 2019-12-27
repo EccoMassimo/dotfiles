@@ -3,7 +3,7 @@ import sys, os
 sys.path.append(os.path.join(sys.path[0], 'jblock'))
 config.source("jblock/jblock/integrations/qutebrowser.py")
 
-c.content.default_encooding = 'utf-8'
+c.content.default_encoding = 'utf-8'
 c.content.geolocation = False
 c.scrolling.bar = 'always'
 c.tabs.background = True
@@ -21,11 +21,11 @@ c.content.headers.do_not_track = True
 #c.content.headers.user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.7 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.7'
 
 tomorrow = {
-    'base03': '#3b4252',
-    'base02': '#434c5e',
-    'base01': '#e5e9f0',
-    'base00': '#d8dee9',
-    'base0': '#4c566a',
+    'base03': '#1d1f21',
+    'base02': '#082a2e',
+    'base01': '#c5c8c6',
+    'base00': '#c5c8c6',
+    'base0': '#1d1f21',
     'base1': '#5e81ac',
     'base2': '#eee8d5',
     'base3': '#eceff4',
