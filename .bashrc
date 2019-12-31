@@ -4,7 +4,6 @@
 #| |_) | (_| \__ \ | | | | | (__
 #|_.__/ \__,_|___/_| |_|_|  \___|
 
-stty -ixon # Disable ctrl-s and ctrl-q
 HISTSIZE= HISTFILESIZE= # Infinite history
 
 # Prompt
