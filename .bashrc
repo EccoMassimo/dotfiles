@@ -25,7 +25,7 @@ alias dwm='cd ~/dwm ; sudo make clean install'
 alias dwm-e='sudo vim ~/dwm/config.h'
 alias st='cd ~/st ; sudo make clean install'
 alias st-e='sudo vim ~/st/config.h'
-alias neofetch='neofetch --ascii_distro gentoo --disable packages distro'
+alias screenfetch='bash ~/.scripts/screenfetch.sh'
 
 # Set ls stuff
 export LS_OPTIONS='--color=auto'
