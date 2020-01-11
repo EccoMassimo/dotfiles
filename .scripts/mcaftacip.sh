@@ -35,7 +35,7 @@ installdotfiles() { \
 installprograms() { \
     clear
 	sudo dpkg --add-architecture i386
-	sudo apt install cowsay cmatrix libreoffice audacity irssi lynx htop ttf-mscorefonts-installer steam lolcat figlet screenkey obs-studio youtube-dl lutris gimp plank
+	sudo apt install cowsay cmatrix libreoffice audacity irssi lynx htop ttf-mscorefonts-installer steam lolcat figlet screenkey obs-studio youtube-dl lutris gimp plank --no-install-recommends
 	cd /home/"$username"
 	mkdir .programs
 	installunchromium
