@@ -23,68 +23,22 @@ while ! echo "$username" | grep '/home' /etc/passwd | cut -d: -f1 | grep -w "$us
     done
 }
 
-choosedotfiles() { \
-    clear
-    printf "Choose which dotfiles you would like to import.\\n%s 0. Max's default config\\n 1. Do not import dotfiles"
-    echo
-    echo
-    echo "Enter selection (0) or (1) :"
-    read dotfiles
-    installdotfiles
-}
-
 installdotfiles() { \
-if ! echo "$dotfiles" | grep -E '(0|1)' ; then
-   echo "Option not valid. Try again."
-   sleep 1
-   choosedotfiles
-   fi
-
-if echo "$dotfiles" | grep '0' ; then
     clear
 	cd /home/"$username"
 	git clone https://github.com/eccomassimo/dotfiles.git
 	mv -f /home/"$username"/dotfiles/* /home/"$username"/dotfiles/.* /home/"$username"/
 	cd /home/"$username"
 	rm -rf dotfiles/
-	fi
-
-if echo "$dotfiles" | grep '1' ; then
-	cd /home/"$username"
-    clear
-	fi
-}
-
-chooseprograms() { \
-    clear
-    printf "Would you like to install additional programs?\\n%s 0. Everything you need to get started\\n 1. Do not install additional programs." 
-    echo
-    echo
-    echo "Enter selection (0) or (1) :"
-    read programs
-    installprograms
 }
 
 installprograms() { \
-if ! echo "$programs" | grep -E '(0|1)' ; then
-   echo "Option not valid. Try again."
-   sleep 1
-   chooseprograms
-   fi
-
-if echo "$programs" | grep '0' ; then
     clear
 	sudo dpkg --add-architecture i386
 	sudo apt install cowsay cmatrix libreoffice audacity irssi lynx htop ttf-mscorefonts-installer steam lolcat figlet screenkey obs-studio youtube-dl lutris gimp plank
 	cd /home/"$username"
 	mkdir .programs
 	installunchromium
-	fi
-
-if echo "$programs" | grep '1' ; then
-    clear
-	echo "No programs installed."
-	fi
 }
 
 installunchromium(){ \
@@ -98,6 +52,7 @@ installunchromium(){ \
 	sudo chmod 4755 /home/"$username"/.programs/ungoogled-chromium_78.0.3904.108-2.1_linux/chrome-sandbox
 	sudo chown root /home/"$username"/.programs/ungoogled-chromium_78.0.3904.108-2.1_linux/chrome-sandbox
 
+    touch /home/$username/.local/share/applications/ungoogled-chromium.desktop
     echo "[Desktop Entry]
 Version=1.0
 Encoding=UTF-8
@@ -121,8 +76,8 @@ exitmsg() { \
 welcomemsg
 pause "Press [Return] key to continue..."
 getuser
-choosedotfiles
-chooseprograms
+installdotfiles
+installprograms
 exitmsg
 pause "Press [Return] key to continue..."
 clear
