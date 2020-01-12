@@ -35,7 +35,8 @@ installdotfiles() { \
 installprograms() { \
     clear
 	sudo dpkg --add-architecture i386
-	sudo apt install cowsay cmatrix libreoffice audacity irssi lynx htop steam lolcat figlet screenkey obs-studio youtube-dl lutris gimp --no-install-recommends
+	sudo apt install cowsay cmatrix libreoffice audacity irssi lynx htop steam lolcat figlet screenkey obs-studio youtube-dl lutris gimp gnome-tweaks discord --no-install-recommends
+	sudo apt remove firefox
 	cd /home/"$username"
 	mkdir .programs
 	installunchromium
