@@ -36,10 +36,11 @@ installprograms() { \
     clear
 	sudo dpkg --add-architecture i386
 	sudo apt install cowsay cmatrix libreoffice audacity irssi lynx htop steam lolcat figlet screenkey obs-studio youtube-dl lutris gimp gnome-tweaks discord --no-install-recommends
-	sudo apt remove firefox
+	sudo apt remove firefox firefox-locale-es firefox-locale-de firefox-locale-ar firefox-locale-en firefox-locale-fr firefox-locale-it firefox-locale-ja firefox-locale-pt firefox-locale-ru firefox-locale-zh-hans firefox-locale-zs-hant 
 	cd /home/"$username"
 	mkdir .programs
 	installunchromium
+	installvscodium
 }
 
 installunchromium(){ \
@@ -66,6 +67,13 @@ Categories=Application;Network;WebBrowser;
 MimeType=x-scheme-handler/unknown;x-scheme-handler/about;x-scheme-handler/https;x-scheme-handler/http;text/html;text/xml;application/xhtml_xml;" > /home/$username/.local/share/applications/chromium-devel.desktop
 }
 
+installvscodium() { \
+	cd /home/"$username"/.programs
+	wget https://github.com/VSCodium/vscodium/releases/download/1.41.1/codium_1.41.1-1576787344_amd64.deb
+	sudo dpkg -i codium_1.41.1-1576787344_amd64.deb
+	rm -f codium_1.41.1-1576787344_amd64.deb
+}
+
 exitmsg() { \
 	clear
     echo "done = good;"
@@ -82,4 +90,3 @@ installprograms
 exitmsg
 pause "Press [Return] key to continue..."
 clear
-
