@@ -21,10 +21,6 @@ alias vis='vis "+set si"'
 alias edit='vim'
 alias root='sudo -i'
 alias su='sudo -i'
-alias dwm='cd ~/dwm ; sudo make clean install'
-alias dwm-e='sudo vim ~/dwm/config.h'
-alias st='cd ~/st ; sudo make clean install'
-alias st-e='sudo vim ~/st/config.h'
 alias screenfetch='bash ~/.scripts/screenfetch.sh'
 
 # Set ls stuff
@@ -36,3 +32,12 @@ alias ls='ls $LS_OPTIONS -a'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+
+# autocomplete
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi

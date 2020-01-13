@@ -35,7 +35,7 @@ installdotfiles() { \
 installprograms() { \
     clear
 	sudo dpkg --add-architecture i386
-	sudo apt install cowsay cmatrix libreoffice audacity irssi lynx htop steam lolcat figlet screenkey obs-studio youtube-dl lutris gimp gnome-tweaks discord --no-install-recommends
+	sudo apt install cowsay cmatrix libreoffice audacity irssi lynx htop steam lolcat figlet screenkey obs-studio youtube-dl lutris gimp gnome-tweaks exfat-utils exfat-fuse openjdk-8-jre openjdk-11-jre openjdk-8-jdk openjdk-11-jdk playonlinux virtualbox
 	sudo apt remove firefox firefox-locale-es firefox-locale-de firefox-locale-ar firefox-locale-en firefox-locale-fr firefox-locale-it firefox-locale-ja firefox-locale-pt firefox-locale-ru firefox-locale-zh-hans firefox-locale-zs-hant 
 	cd /home/"$username"
 	mkdir .programs
