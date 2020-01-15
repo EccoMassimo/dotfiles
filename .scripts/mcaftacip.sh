@@ -16,7 +16,7 @@ getuser() { \
     echo "Input username:"
     read username
 
-while ! echo "$username" | grep '/home' /etc/passwd | cut -d: -f1 | grep -w "$username" ; do
+while ! echo "$username" | grep '/home' /etc/passwd | cut -d: -f1 | grep -w "$username" >/dev/null ; do
     echo "Username not valid. Try again."
     sleep 1
     getuser
@@ -35,8 +35,8 @@ installdotfiles() { \
 installprograms() { \
     clear
 	sudo dpkg --add-architecture i386
-	sudo apt install cowsay cmatrix libreoffice audacity irssi lynx htop steam lolcat figlet screenkey obs-studio youtube-dl lutris gimp gnome-tweaks exfat-utils exfat-fuse openjdk-8-jre openjdk-11-jre openjdk-8-jdk openjdk-11-jdk playonlinux virtualbox gnome-shell-extention-dashtodock gnome-shell-extension-no-annoyance gnome-shell-extension-multi-monitors
-	sudo apt remove firefox firefox-locale-es firefox-locale-de firefox-locale-ar firefox-locale-en firefox-locale-fr firefox-locale-it firefox-locale-ja firefox-locale-pt firefox-locale-ru firefox-locale-zh-hans firefox-locale-zs-hant 
+	sudo apt install cowsay cmatrix libreoffice audacity irssi lynx htop steam lolcat figlet screenkey obs-studio youtube-dl lutris gimp gnome-tweaks exfat-utils exfat-fuse openjdk-8-jre openjdk-11-jre openjdk-8-jdk openjdk-11-jdk playonlinux virtualbox gnome-shell-extension-dashtodock gnome-shell-extension-multi-monitors gnome-shell-extension-no-annoyance
+	sudo apt remove firefox firefox-locale-es firefox-locale-de firefox-locale-ar firefox-locale-en firefox-locale-fr firefox-locale-it firefox-locale-ja firefox-locale-pt firefox-locale-ru firefox-locale-zh-hans
 	cd /home/"$username"
 	mkdir .programs
 	installunchromium
@@ -85,6 +85,7 @@ exitmsg() { \
 welcomemsg
 pause "Press [Return] key to continue..."
 getuser
+choosehostname
 installdotfiles
 installprograms
 exitmsg
