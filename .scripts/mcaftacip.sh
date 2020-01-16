@@ -6,7 +6,12 @@ function pause(){
 
 welcomemsg() { \
 	clear
-    printf "Thanks for downloading Max's Catastrophically Automatic File Transfer and Customized Installation Protocol.\\n%s\\n Before the installer continues, you must input your username.\\n The script will check if this is a valid user so don't worry\\n if you typed it wrong.\\n\\n If at any point you want to exit, press [CTRL+C] to quit the installer."
+    echo "THIS SCRIPT CAN NOT BE RUN AS ROOT. IF YOU DID GO BACK NOW
+
+Thank you for using Max's Catastrophically Automatic File Transfer and Customized Installation Protocol.
+Before the installer continues, you must input your username.
+The script will check if this is a valid user so don't worry if you typed it wrong.
+If at any point you want to exit, press [CTRL+C] to quit the installer."
     echo
     echo
 	}
@@ -23,24 +28,43 @@ while ! echo "$username" | grep '/home' /etc/passwd | cut -d: -f1 | grep -w "$us
     done
 }
 
+choosedotfiles() { \
+	clear
+	read -e -p "Would you like to clone the dotfiles repo? (y/n)" choice
+	[[ "$choice" == [Yy]* ]] && echo "Cloning dotfiles..." && installdotfiles
+	
+}
+
+
 installdotfiles() { \
     clear
-	cd /home/"$username"
+	cd /home/"$username"/
 	git clone https://github.com/eccomassimo/dotfiles.git
 	mv -f /home/"$username"/dotfiles/* /home/"$username"/dotfiles/.* /home/"$username"/
-	cd /home/"$username"
+	cd /home/"$username"/
 	rm -rf dotfiles/
+}
+
+chooseprograms() { \
+	# prompt to install ungoogled chromium
+	clear
+	read -e -p "Would you like to install Ungoogled Chromium? (y/n)" choice
+	[[ "$choice" == [Yy]* ]] && echo "Installing Ungoogled Chromium..." && installunchromium
+
+	# prompt to install vscodium & frc tools
+	clear
+	read -e -p "Would you like to install VSCodium? (y/n)" choice
+	[[ "$choice" == [Yy]* ]] && echo "Installing VSCodium..." && installvscodium && read -e -p "Would you like to install WPILib for FRC? (y/n)" choice
+	[[ "$choice" == [Yy]* ]] && echo "Installing FRC Tools..." && installwpilib
 }
 
 installprograms() { \
     clear
 	sudo dpkg --add-architecture i386
-	sudo apt install cowsay cmatrix libreoffice audacity irssi lynx htop steam lolcat figlet screenkey obs-studio youtube-dl lutris gimp gnome-tweaks exfat-utils exfat-fuse openjdk-8-jre openjdk-11-jre openjdk-8-jdk openjdk-11-jdk playonlinux virtualbox gnome-shell-extension-dashtodock gnome-shell-extension-multi-monitors gnome-shell-extension-no-annoyance
-	sudo apt remove firefox firefox-locale-es firefox-locale-de firefox-locale-ar firefox-locale-en firefox-locale-fr firefox-locale-it firefox-locale-ja firefox-locale-pt firefox-locale-ru firefox-locale-zh-hans
-	cd /home/"$username"
-	mkdir .programs
-	installunchromium
-	installvscodium
+	sudo apt install cowsay cmatrix libreoffice audacity irssi lynx htop steam lolcat figlet screenkey obs-studio youtube-dl lutris gimp gnome-tweaks exfat-utils exfat-fuse openjdk-8-jre openjdk-11-jre openjdk-8-jdk openjdk-11-jdk playonlinux virtualbox gnome-shell-extension-dashtodock gnome-shell-extension-multi-monitors gnome-shell-extension-no-annoyance mlocate
+	sudo apt remove firefox
+	sudo apt autoremove
+	cd /home/"$username"/
 }
 
 installunchromium(){ \
@@ -68,26 +92,45 @@ MimeType=x-scheme-handler/unknown;x-scheme-handler/about;x-scheme-handler/https;
 }
 
 installvscodium() { \
+	cd /home/"$username"/
+	mkdir .programs 
 	cd /home/"$username"/.programs
 	wget https://github.com/VSCodium/vscodium/releases/download/1.41.1/codium_1.41.1-1576787344_amd64.deb
 	sudo dpkg -i codium_1.41.1-1576787344_amd64.deb
 	rm -f codium_1.41.1-1576787344_amd64.deb
+	codium --install-extension visualstudioexptteam.vscodeintellicode eamodio.gitlens vscjava.vscode-java-pack siddharthkp.codesandbox-black zhuangtongfa.material-theme
+	clear
 }
+
+installwpilib() { \
+	cd /home/"$username"/
+	mkdir wpilib
+	cd wpilib
+	mkdir 2020
+	wget https://github.com/wpilibsuite/allwpilib/releases/download/v2020.1.2/WPILib_Linux-2020.1.2.tar.gz
+	tar -xf WPILib_Linux-2020.1.2.tar.gz
+	sudo rm -rf WPILib_Linux-2020.1.2.tar.gz
+	cd vsCodeExtensions
+	codium --install-extension JavaDebug.vsix JavaDeps.vsix JavaLang.vsix WPILib.vsix
+	clear
+}
+
 
 exitmsg() { \
 	clear
     echo "done = good;"
+	echo
+    echo "The installer has finished."
     echo
-    echo
+	echo
 	}
 
 # Things that are executed (in order)
 welcomemsg
 pause "Press [Return] key to continue..."
 getuser
-choosehostname
-installdotfiles
-installprograms
+choosedotfiles
+chooseprograms
 exitmsg
 pause "Press [Return] key to continue..."
 clear

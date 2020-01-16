@@ -7,7 +7,7 @@
 HISTSIZE= HISTFILESIZE= # Infinite history
 
 # Prompt
-export PS1="\[\e[30;46m\]\u\[\e[m\]\[\e[30;46m\]@\[\e[m\]\[\e[30;46m\]\h\[\e[m\] \[\e[30;47m\]\w\[\e[m\] \\$ "
+export PS1="\[\e[36m\][\[\e[m\]\[\e[35m\]\w\[\e[m\]\[\e[36m\]]\[\e[m\] \[\e[37m\]\\$\[\e[m\] "
 
 # Aliases
 alias ctd='ssh crossthedesert@crossthedesert.dev'
